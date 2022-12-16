@@ -9,5 +9,5 @@ navigation:
     url: example
   - title: Bibliography
     url: bibliography
-   - title: Test1
-   url: test1
+  - title: Test1
+    url: test1
