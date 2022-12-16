@@ -11,3 +11,4 @@ We use the dataset provided by BeerAdvocate at this [link](https://drive.google.
 _<ca>  Fig1: This plot shows...  </ca>_
 
 {% include horizontal_bar_plot_example.html %}
+{% include top_10_styles.html %}
