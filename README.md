@@ -6,3 +6,5 @@ We use the dataset provided by BeerAdvocate at this [link](https://drive.google.
 ## Part 2
 ![Plot1](./assets/img/plot1.png "plot 1")
 _<ca>  Fig1: This plot shows...  </ca>_
+
+{% include horizontal_bar_plot_example.html %}
