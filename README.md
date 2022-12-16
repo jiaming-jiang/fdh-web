@@ -1,7 +1,7 @@
 ![Beer Banner](./assets/img/beer_banner_extended.jpg "beer banner")
 
-# beeradvocate.com, what kind of raters does the website attract?
+# [BeerAdvocate](https://www.beeradvocate.com/), what kind of raters does the website attract?
 ## Introduction to the dataset
-[Link to beer advocate](https://www.beeradvocate.com/).
+We use the dataset provided by BeerAdvocate at this [link](https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9uTwG9uNsN4TCF).
 ## Part 2
 ...
