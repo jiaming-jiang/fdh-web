@@ -10,4 +10,4 @@ We use the dataset provided by BeerAdvocate at this [link](https://drive.google.
 ![Plot2](./assets/img/plot2.jpg "plot 2")
 _<ca>  Fig1: This plot shows...  </ca>_
 
-{% include horizontal_bar_plot_example.html %}
+{% include top_10_styles.html %}
