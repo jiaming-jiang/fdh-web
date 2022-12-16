@@ -2,6 +2,6 @@
 
 # beeradvocate.com, what kind of raters does the website attract?
 ## Introduction to the dataset
-[Link to another page]( beeradvocate.com).
+[Link to beer advocate](https://www.beeradvocate.com/).
 ## Part 2
 ...
