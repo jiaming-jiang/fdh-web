@@ -1,9 +1,12 @@
 ![Beer Banner](./assets/img/beer_banner_extended.jpg "beer banner")
 
 # [BeerAdvocate](https://www.beeradvocate.com/), what kind of raters does the website attract?
-## Introduction to the dataset
+## Motivation
+## Goal
+## Research questions
+## Data
 We use the dataset provided by BeerAdvocate at this [link](https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9uTwG9uNsN4TCF).
-## Part 2
+## The data analysis
 ![Plot2](./assets/img/plot2.jpg "plot 2")
 _<ca>  Fig1: This plot shows...  </ca>_
 
