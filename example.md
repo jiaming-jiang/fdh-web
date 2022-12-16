@@ -1,6 +1,4 @@
----
-layout: default
----
+![Beer Banner](./assets/img/beer_banner_extended.jpg "beer banner")
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
