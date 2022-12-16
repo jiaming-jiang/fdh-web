@@ -26,11 +26,13 @@ h1, h2, h3 {
 h1 {
   font-size:28px;
   font-weight: 500;
+  color:#C98A0D;
 }
 
 h2 {
   font-size:24px;
   font-weight: 500;
+  color: #E29B0F;
 }
 
 h3, h4, h5, h6 {
