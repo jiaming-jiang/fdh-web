@@ -5,4 +5,4 @@
 We use the dataset provided by BeerAdvocate at this [link](https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9uTwG9uNsN4TCF).
 ## Part 2
 ![Plot1](./assets/img/plot1.png "plot 1")
-<p style="text-align: center;">  _Fig1: This plot shows..._  </p>
+_<c_a>  Fig1: This plot shows...  </c_a>_
