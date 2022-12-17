@@ -10,7 +10,7 @@ We use the dataset provided by BeerAdvocate at this [link](https://drive.google.
 
 ### The categories
 
-**Conformist**: A user which rates closely to the average rating of the beers.
+- **Conformist**: A user which rates closely to the average rating of the beers.
 
 <details>
   <summary>Show more details</summary>
@@ -25,7 +25,7 @@ The metric is high if the user, on average, rates beers close to the average rat
 </details>
 
 
-**Expert-like**: A user which
+- **Expert-like**: A user which
 
 <details>
   <summary>Show more details</summary>
