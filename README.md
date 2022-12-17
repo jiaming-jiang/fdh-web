@@ -9,15 +9,34 @@ We use the dataset provided by BeerAdvocate at this [link](https://drive.google.
 ## The data analysis
 
 ### The categories
-**Conformist**
+
+**Conformist**: A user which rates closely to the average rating of the beers.
+$$CFM_u = \frac{1}{|B_u|}\sum_{b \in B_u}(\frac{r_{u,b}-\overline{r_b}}{\sigma_b})^2$$
+
 <details>
   <summary>Show more details</summary>
   
-A user $u$ is a conformist if he/she has a high conformism score defined as follows:
+A user 
+$u$
+is a conformist if he/she has a high conformism score defined as follows:
 
 $$CFM_u = \frac{1}{|B_u|}\sum_{b \in B_u}(\frac{r_{u,b}-\overline{r_b}}{\sigma_b})^2$$
 
 The metric is high if the user, on average, rates beers close to the average rating they get. This metric, aside from classifying users, could be an indicator of hearding effect if users from a particular region (a US state) have a high conformism score on average.
+</details>
+
+
+**Expert-like**: A user which
+
+<details>
+  <summary>Show more details</summary>
+
+A user 
+$u$
+is an expert-like if he/she has a high score similarity with our reference for expert rating. The score is defined as follows:
+$$EXP_u = \frac{1}{\frac{1}{|B_u|}\sum_{b \in B_u}(\frac{r_{u,b}-ref_b}{\sigma_b})^2}$$
+
+The score is large if, on average, the user rates beers close to the reference score. This metric is our best shot at detecting senior beer raters and experts active on the website based solely on the available data.
 </details>
 
 ### ...
