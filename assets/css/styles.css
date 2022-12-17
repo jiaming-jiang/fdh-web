@@ -20,6 +20,7 @@ h1, h2, h3 {
 }
 
 h1 {
+  text-decoration: underline;
   font-size:28px;
   font-weight: 500;
   color:#E29B0F;
