@@ -10,7 +10,7 @@ We use the dataset provided by BeerAdvocate at this [link](https://drive.google.
 
 ### The categories
 
-#### **Conformist**: 
+#### **Conformist:** 
 A user which rates closely to the average rating of the beers.
 
 <details>
@@ -20,11 +20,29 @@ A user which rates closely to the average rating of the beers.
   $u$
   is a conformist if he/she has a high conformism score defined as follows:
   $$CFM_u = \frac{1}{|B_u|}\sum_{b \in B_u}(\frac{r_{u,b}-\overline{r_b}}{\sigma_b})^2$$
-  where $B_u$ is the set of beers the user $u$ has rated, $r_{u,b}$ is the rating given by user $u$ to beer $b$, $\sigma_b$ is the standard deviation of the ratings of the beer $b$, and $\overline{r_b}$ is the average rating of beer $b$.\
+  where 
+  $B_u$ 
+  is the set of beers the user 
+  $u$ 
+  has rated, 
+  $r_{u,b}$
+  is the rating given by user 
+  $u$ 
+  to beer 
+  $b$
+  , 
+  $\sigma_b$
+  is the standard deviation of the ratings of the beer 
+  $b$
+  , and 
+  $\overline{r_b}$
+  is the average rating of beer 
+  $b$
+  .\
   The metric is high if the user, on average, rates beers close to the average rating they get. This metric, aside from classifying users, could be an indicator of hearding effect if users from a particular region (a US state) have a high conformism score on average.
 </details>
 
-#### **Expert-like**: 
+#### **Expert-like:** 
 A user which rates closely to the reference expert rating.
 
 <details>
@@ -38,7 +56,7 @@ A user which rates closely to the reference expert rating.
   The score is large if, on average, the user rates beers close to the reference score. This metric is our best shot at detecting senior beer raters and experts active on the website based solely on the available data.
 </details>
 
-#### **Explorator**:
+#### **Explorator:**
 A user which rates beers that have only a few ratings.
 
 <details>
@@ -56,7 +74,7 @@ A user which rates beers that have only a few ratings.
   This metric is larger for users that try out new beers that have not been in the spotlight (that is why they are explorators), and is low for users that almost always rate beers that have been already been rated many times before (in our case 10 times at least). This score provides us with information about which users contribute to enriching the experience on the website, either because they rate beers that do not get much attention, or because they "introduce" new beers on the website by being the first people to rate those beers.
 </details>
 
-#### **Adventurer**: 
+#### **Adventurer:**
 A user which rates a certain amount a poorly rated beers.
 
 <details>
