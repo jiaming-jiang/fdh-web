@@ -12,7 +12,7 @@ We use the dataset provided by BeerAdvocate at this [link](https://drive.google.
 
 - **Conformist**: A user which rates closely to the average rating of the beers.
 
-<details>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <details>
   <summary>Show more details</summary>
   
 A user 
