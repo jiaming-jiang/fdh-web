@@ -10,22 +10,19 @@ We use the dataset provided by BeerAdvocate at this [link](https://drive.google.
 
 ### The categories
 
-- **Conformist**: A user which rates closely to the average rating of the beers.
+#### **Conformist**: A user which rates closely to the average rating of the beers.
 
 <details>
-  <summary>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Show more details</summary>
+  <summary>Show more details</summary>
   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A user 
+A user 
 $u$
 is a conformist if he/she has a high conformism score defined as follows:
-
 $$CFM_u = \frac{1}{|B_u|}\sum_{b \in B_u}(\frac{r_{u,b}-\overline{r_b}}{\sigma_b})^2$$
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The metric is high if the user, on average, rates beers close to the average rating they get. This metric, aside from classifying users, could be an indicator of hearding effect if users from a particular region (a US state) have a high conformism score on average.
+The metric is high if the user, on average, rates beers close to the average rating they get. This metric, aside from classifying users, could be an indicator of hearding effect if users from a particular region (a US state) have a high conformism score on average.
 </details>
 
-
-- **Expert-like**: A user which
+#### **Expert-like**: A user which
 
 <details>
   <summary>Show more details</summary>
