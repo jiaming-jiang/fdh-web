@@ -15,7 +15,7 @@ We use the dataset provided by BeerAdvocate at this [link](https://drive.google.
   
 A user $u$ is a conformist if he/she has a high conformism score defined as follows:
 
-$$ CFM_u = \frac{1}{|B_u|}\sum_{b \in B_u}(\frac{r_{u,b}-\overline{r_b}}{\sigma_b})^2$$
+$$CFM_u = \frac{1}{|B_u|}\sum_{b \in B_u}(\frac{r_{u,b}-\overline{r_b}}{\sigma_b})^2$$
 
 The metric is high if the user, on average, rates beers close to the average rating they get. This metric, aside from classifying users, could be an indicator of hearding effect if users from a particular region (a US state) have a high conformism score on average.
 </details>
