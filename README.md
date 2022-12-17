@@ -11,7 +11,6 @@ We use the dataset provided by BeerAdvocate at this [link](https://drive.google.
 ### The categories
 
 **Conformist**: A user which rates closely to the average rating of the beers.
-$$CFM_u = \frac{1}{|B_u|}\sum_{b \in B_u}(\frac{r_{u,b}-\overline{r_b}}{\sigma_b})^2$$
 
 <details>
   <summary>Show more details</summary>
