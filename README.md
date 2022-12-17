@@ -16,7 +16,7 @@ We use the dataset provided by BeerAdvocate at this [link](https://drive.google.
 A user which rates closely to the average rating of the beers.
 
 <details>
-  <summary>_Show more details_</summary>
+  _<summary>Show more details</summary>_
   
   A user   $u$  is a conformist if he/she has a high conformism score defined as follows:
   $$CFM_u = \frac{1}{|B_u|}\sum_{b \in B_u}(\frac{r_{u,b}-\overline{r_b}}{\sigma_b})^2$$
@@ -30,7 +30,7 @@ A user which rates closely to the average rating of the beers.
 A user which rates closely to the reference expert rating.
 
 <details>
-  <summary>_Show more details_</summary>
+  _<summary>Show more details</summary>_
 
   A user $u$ is an expert-like if he/she has a high score similarity with our reference for expert rating. The score is defined as follows:
   $$EXP_u = \frac{1}{\frac{1}{|B_u|}\sum_{b \in B_u}(\frac{r_{u,b}-ref_b}{\sigma_b})^2}$$
@@ -44,7 +44,7 @@ A user which rates closely to the reference expert rating.
 A user which rates beers that have only a few ratings.
 
 <details>
-  <summary>_Show more details_</summary>
+  _<summary>Show more details</summary>_
   
   A user 
   $u$
@@ -64,7 +64,7 @@ A user which rates beers that have only a few ratings.
 A user which rates a certain amount a poorly rated beers.
 
 <details>
-  <summary>_Show more details_</summary>
+  _<summary>Show more details</summary>_
   
   A user 
   $u$
