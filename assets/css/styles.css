@@ -139,7 +139,7 @@ header li:first-child a {
 header li:last-child a {
   border-radius:0 5px 5px 0;
 }
-*/
+
 header ul a {
   line-height:1;
   font-size:11px;
@@ -157,7 +157,7 @@ header ul a:hover {
 header ul a:active {
   background-color:#f0f0f0;
 }
-
+*/
 strong {
   color:#222;
   font-weight:500;
@@ -176,7 +176,7 @@ header ul a strong {
 
 section {
   width:750px;
-  float:right;
+  float:center;
   padding-bottom:50px;
 }
 
@@ -193,7 +193,7 @@ hr {
 
 footer {
   width:270px;
-  float:left;
+  float:center;
   position:fixed;
   bottom:50px;
   -webkit-font-smoothing:subpixel-antialiased;
