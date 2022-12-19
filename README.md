@@ -69,19 +69,19 @@ A user which rates a certain amount a poorly rated beers.
 
 ### Time analysis
 
-{% includetime_analysis_cat_perc_new_users.html %}
+{% include time_analysis_cat_perc_new_users.html %}
 _Fig?: This plot shows..._
-{% time_analysis_cat_perc_new_users_2014.html %}
+{% include time_analysis_cat_perc_new_users_2014.html %}
 _Fig?: This plot shows..._
-{% time_analysis_new_user_count.html %}
+{% include time_analysis_new_user_count.html %}
 _Fig?: This plot shows..._
 
 
 ### Likelihood & ratings/reviews analysis
 
-{% ratings_and_cathegory_proba_analysis.html %}
+{% include ratings_and_cathegory_proba_analysis.html %}
 _Fig?: This plot shows..._
-{% reviews_and_cathegory_proba_analysis.html %}
+{% include reviews_and_cathegory_proba_analysis.html %}
 _Fig?: This plot shows..._
 
 ![Plot2](./assets/img/plot2.jpg "plot 2")
