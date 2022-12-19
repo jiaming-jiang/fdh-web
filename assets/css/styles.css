@@ -193,11 +193,11 @@ hr {
 }
 
 footer {
-  width:200px;
+  width:250px;
   float:left;
   position:fixed;
-  bottom:20px;
-  background:#BBBBBB;
+  bottom:10px;
+  background:#D4D4D4;
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
