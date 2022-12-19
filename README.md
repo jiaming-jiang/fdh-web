@@ -85,5 +85,8 @@ _Fig?: This plot shows..._
 _Fig?: This plot shows..._
 
 ![Plot2](./assets/img/plot2.jpg "plot 2")
-_<ca>  Fig1: This plot shows...  </ca>_
+_Fig1: This plot shows..._
+
+![Alt text](./assets/svg/adv_distribution.svg)
+    <img src="./assets/svg/adv_distribution.svg">
 
