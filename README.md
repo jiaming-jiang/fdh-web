@@ -89,4 +89,18 @@ _Fig1: This plot shows..._
 
 ![Alt text](./assets/svg/adv_distribution.svg)
     <img src="./assets/svg/adv_distribution.svg">
+    _Fig?: This plot shows..._
+    
+![Alt text](./assets/svg/cfm_distribution.svg)
+    <img src="./assets/svg/cfm_distribution.svg">    
+    _Fig?: This plot shows..._
+    
+![Alt text](./assets/svg/exp_distribution.svg)
+    <img src="./assets/svg/exp_distribution.svg">    
+    _Fig?: This plot shows..._
+   
+![Alt text](./assets/svg/xpl_distribution.svg)
+    <img src="./assets/svg/xpl_distribution.svg">    
+    _Fig?: This plot shows..._
+   
 
