@@ -107,7 +107,7 @@ th {
 img {
   max-width:100%;
 }
-
+/*
 header {
   width:270px;
   float:left;
@@ -139,7 +139,7 @@ header li:first-child a {
 header li:last-child a {
   border-radius:0 5px 5px 0;
 }
-
+*/
 header ul a {
   line-height:1;
   font-size:11px;
