@@ -69,7 +69,7 @@ A user which rates a certain amount a poorly rated beers.
 
 ### Time analysis
 
-{% include time_analysis_cat_perc_new_users.html %}
+{% include time_analysis_cat_perc_new_users.html %}{width=50%}
 _Fig?: This plot shows..._
 {% include time_analysis_cat_perc_new_users_2014.html %}
 _Fig?: This plot shows..._
