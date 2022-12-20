@@ -94,9 +94,6 @@ _Fig?: This plot shows..._
 {% include reviews_and_cathegory_proba_analysis.html %}
 _Fig?: This plot shows..._
 
-![Plot2](./assets/img/plot2.jpg "plot 2")
-_Fig1: This plot shows..._
-
 ![Alt text](./assets/svg/adv_distribution.svg)
     _Fig?: This plot shows..._
     
