@@ -66,6 +66,11 @@ A user which rates a certain amount a poorly rated beers.
 </details>
 
 <br/>
+  
+### Categories and countries
+{% include top_countries_pie_chart.html %}{width=100%}
+_Fig?: This plot shows...
+ 
 
 ### Time analysis
 
@@ -102,5 +107,6 @@ _Fig1: This plot shows..._
 ![Alt text](./assets/svg/xpl_distribution.svg)
     <img src="./assets/svg/xpl_distribution.svg">    
     _Fig?: This plot shows..._
+ 
    
 
