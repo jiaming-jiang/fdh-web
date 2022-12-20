@@ -99,7 +99,6 @@ _Fig?: This plot shows..._
 _Fig1: This plot shows..._
 
 ![Alt text](./assets/svg/adv_distribution.svg)
-    <img src="./assets/svg/adv_distribution.svg">
     _Fig?: This plot shows..._
     
 ![Alt text](./assets/svg/cfm_distribution.svg)
