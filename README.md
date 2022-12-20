@@ -66,11 +66,17 @@ A user which rates a certain amount a poorly rated beers.
 </details>
 
 <br/>
-  
+
+### Categories overlap
+
+![Alt text](./assets/svg/venn_diagram_categories.svg)
+    <img src="./assets/svg/venn_diagram_categories.svg">    
+    _Fig?: This plot shows..._
+
 ### Categories and countries
+
 {% include top_countries_pie_chart.html %}{width=100%}
 _Fig?: This plot shows...
- 
 
 ### Time analysis
 
