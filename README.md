@@ -69,8 +69,7 @@ A user which rates a certain amount a poorly rated beers.
 
 ### Categories overlap
 
-![Alt text](./assets/svg/venn_diagram_categories.svg)
-    <img src="./assets/svg/venn_diagram_categories.svg">    
+![Alt text](./assets/svg/venn_diagram_categories.svg)  
     _Fig?: This plot shows..._
 
 ### Categories and countries
@@ -101,16 +100,13 @@ _Fig1: This plot shows..._
 ![Alt text](./assets/svg/adv_distribution.svg)
     _Fig?: This plot shows..._
     
-![Alt text](./assets/svg/cfm_distribution.svg)
-    <img src="./assets/svg/cfm_distribution.svg">    
+![Alt text](./assets/svg/cfm_distribution.svg) 
     _Fig?: This plot shows..._
     
-![Alt text](./assets/svg/exp_distribution.svg)
-    <img src="./assets/svg/exp_distribution.svg">    
+![Alt text](./assets/svg/exp_distribution.svg) 
     _Fig?: This plot shows..._
    
-![Alt text](./assets/svg/xpl_distribution.svg)
-    <img src="./assets/svg/xpl_distribution.svg">    
+![Alt text](./assets/svg/xpl_distribution.svg)  
     _Fig?: This plot shows..._
  
    
