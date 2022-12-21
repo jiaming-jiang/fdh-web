@@ -77,6 +77,22 @@ A user which rates a certain amount a poorly rated beers.
 {% include top_countries_pie_chart.html %}{width=100%}
 _Fig?: This plot shows...
 
+### Beer location most rated and most liked by category
+
+{% include beer_ratings_by_location.html %}
+_Fig?: This plot shows..._
+{% include beer_location_most_liked.html %}
+_Fig?: This plot shows...
+
+### Beer style most rated and most liked by category
+
+{% include top_beer_styles.html %}
+_Fig?: This plot shows..._
+{% include beer_liked_beer_styles.html %}
+_Fig?: This plot shows..._
+{% include adventurer_least_liked_beer_styles.html %}
+_Fig?: This plot shows..._
+
 ### Time analysis
 
 {% include time_analysis_cat_perc_new_users.html %}{width=50%}
