@@ -254,19 +254,24 @@ footer {
   text-decoration: none;
   font-size: 30px;
 }
-.downloads-section h1{
+.externals-section h1{
   color: #ffffff;
   text-decoration: none;
   font-size: 30px;
 }
-.downloads-section ul{
+.externals-section ul{
   list-style:none;
   position:relative;
 }
-.downloads-section ul li{
+.externals-section ul li{
   padding: 10px 0;
 }
-.downloads-section ul li a{
+.externals-section ul li a{
   color: #ffffff;
   text-decoration: none;
+}
+.footer-note{
+  height:30px;
+  width:100%;
+  background:#9e9e9e;
 }
