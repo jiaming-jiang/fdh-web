@@ -1,17 +1,15 @@
 {% include head.html %}
 ![Beer Banner](./assets/img/beer_banner_extended.jpg "beer banner")
 
-# [BeerAdvocate](https://www.beeradvocate.com/), what kind of raters does the website attract?
-## Motivation
-## Goal
-## Research questions
+## Introduction
+### Research questions
+
 ## Data
 We use the dataset provided by BeerAdvocate at this [link](https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9uTwG9uNsN4TCF).
-## The data analysis
 
-### The categories
+## User Categories
 
-#### **Conformist:** 
+### **Conformist:** 
 A user which rates closely to the average rating of the beers.
 
 <details>
@@ -25,7 +23,7 @@ A user which rates closely to the average rating of the beers.
 
 <br/>
 
-#### **Expert-like:** 
+### **Expert-like:** 
 A user which rates closely to the reference expert rating.
 
 <details>
@@ -39,7 +37,7 @@ A user which rates closely to the reference expert rating.
 
 <br/>
 
-#### **Explorator:**
+### **Explorator:**
 A user which rates beers that have only a few ratings.
 
 <details>
@@ -52,7 +50,7 @@ A user which rates beers that have only a few ratings.
 
 <br/>
 
-#### **Adventurer:**
+### **Adventurer:**
 A user which rates a certain amount a poorly rated beers.
 
 <details>
@@ -66,7 +64,7 @@ A user which rates a certain amount a poorly rated beers.
 
 <br/>
 
-### User Classification
+## User Classification
 
 ![Alt text](./assets/svg/adv_distribution.svg)
 
@@ -84,58 +82,64 @@ TODO
 
 TODO
 
-### Categories overlap
-
+### Categories' Overlap
 ![Alt text](./assets/svg/venn_diagram_categories.svg)  
-    _Fig?: This plot shows..._
+  
+TODO
 
-### Categories and countries
-
+## Countries and Categories
 {% include top_countries_pie_chart.html %}{width=100%}
-_Fig?: This plot shows...
 
-### Beer location most rated and most liked by category
+TODO
+
+## Beers and Categories
+
+### The Locations with the Most Rated and Most Liked Beers
 
 {% include beer_ratings_by_location.html %}
-_Fig?: This plot shows..._
+
+TODO
 
 {% include beer_location_most_liked.html %}
-_Fig?: This plot shows...
 
-### Beer style most rated and most liked by category
+TODO
+
+### The Most Rated and Most Liked Beer Styles
 
 {% include top_beer_styles.html %}
-_Fig?: This plot shows..._
+
+TODO
 
 {% include top_liked_beer_styles.html %}
-_Fig?: This plot shows..._
+
+TODO
 
 {% include adventurer_least_liked_beer_styles.html %}
-_Fig?: This plot shows..._
+
+TODO
 
 
-### Regression analysis
-
+## Regression analysis
 ![Alt text](./assets/svg/adventurer_regression.svg)
 
+TODO
 
-### Sentiment analysis
-
+## Sentiment analysis on User Reviews
 ![Alt text](./assets/svg/sentiment_scores.svg)
 
-
-### Likelihood & ratings/reviews analysis
-
-{% include ratings_and_cathegory_proba_analysis.html %}
-
 TODO
 
-{% include reviews_and_cathegory_proba_analysis.html %}
-
+## Categories' Personas
+### Explorers (XPL)
+TODO
+### Conformists (CFM)
+TODO
+### Adventurers (ADV)
+TODO
+### Reference-like (EXP)
 TODO
 
-### Time analysis
-
+## Time analysis
 {% include time_analysis_cat_perc_new_users.html %}{width=50%}
 
 TODO
@@ -148,6 +152,7 @@ TODO
 
 TODO
 
+## Takeaways
 
  
    
