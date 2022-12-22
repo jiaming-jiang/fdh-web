@@ -1,13 +1,13 @@
 {% include head.html %}
 ![Beer Banner](./assets/img/beer_banner_extended.jpg "beer banner")
 
-<a id="section_intro">## Introduction</a>
+## <a id="section_intro">Introduction</a>
 ### Research questions
 
-<a id="section_data">## Data</a>
+## <a id="section_data">Dataset</a>
 We use the dataset provided by BeerAdvocate at this [link](https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9uTwG9uNsN4TCF).
 
-<a id="section_user_categories">## User Categories</a>
+## <a id="section_user_categories">User Categories</a>
 
 ### **Conformist:** 
 A user which rates closely to the average rating of the beers.
@@ -64,7 +64,7 @@ A user which rates a certain amount a poorly rated beers.
 
 <br/>
 
-<a id="section_classification">## User Classification</a>
+##<a id="section_classification">User Classification</a>
 
 ![Alt text](./assets/svg/adv_distribution.svg)
 
@@ -87,12 +87,12 @@ TODO
   
 TODO
 
-<a id="section_countries">## Countries and Categories</a>
+##<a id="section_countries">Countries and Categories</a>
 {% include top_countries_pie_chart.html %}{width=100%}
 
 TODO
 
-<a id="section_beers">## Beers and Categories</a>
+##<a id="section_beers">Beers and Categories</a>
 
 ### The Locations with the Most Rated and Most Liked Beers
 
@@ -119,17 +119,17 @@ TODO
 TODO
 
 
-<a id="section_reg_analysis">## Regression analysis</a>
+##<a id="section_reg_analysis">Regression analysis</a>
 ![Alt text](./assets/svg/adventurer_regression.svg)
 
 TODO
 
-<a id="section_sent_analysis">## Sentiment analysis on User Reviews</a>
+##<a id="section_sent_analysis">Sentiment analysis on User Reviews</a>
 ![Alt text](./assets/svg/sentiment_scores.svg)
 
 TODO
 
-<a id="section_personas">## Categories' Personas</a>
+##<a id="section_personas">Categories' Personas</a>
 ### Explorers (XPL)
 TODO
 ### Conformists (CFM)
@@ -139,7 +139,7 @@ TODO
 ### Reference-like (EXP)
 TODO
 
-<a id="section_t_analysis">## Time analysis</a>
+##<a id="section_t_analysis">Time analysis</a>
 {% include time_analysis_cat_perc_new_users.html %}{width=50%}
 
 TODO
@@ -152,7 +152,7 @@ TODO
 
 TODO
 
-<a id="section_takeaways">## Takeaways</a>
+##<a id="section_takeaways">Takeaways</a>
 
 TODO
 
