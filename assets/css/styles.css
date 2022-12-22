@@ -226,8 +226,8 @@ footer {
   }
 }
 
-/* Farouk: stylization of navigation side bar*/
-.navig-bar{
+/* Farouk: stylization side bar*/
+.side-bar{
   width: 250px;
   height: 100%;
   background: #854700;
@@ -238,19 +238,35 @@ footer {
   text-align: left;
   font-size: 15px;
 }
-.navig-bar ul{
+.navig-section ul{
   list-style:none;
   position:relative;
 }
-.navig-bar ul li{
+.navig-section ul li{
   padding: 10px 0;
 }
-.navig-bar ul li a{
+.navig-section ul li a{
   color: #ffffff;
   text-decoration: none;
 }
-.navig-bar h1{
+.navig-section h1{
   color: #ffffff;
   text-decoration: none;
   font-size: 30px;
+}
+.downloads-section h1{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 30px;
+}
+.downloads-section ul{
+  list-style:none;
+  position:relative;
+}
+.downloads-section ul li{
+  padding: 10px 0;
+}
+.downloads-section ul li a{
+  color: #ffffff;
+  text-decoration: none;
 }
