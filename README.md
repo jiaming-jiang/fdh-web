@@ -120,6 +120,10 @@ _Fig?: This plot shows..._
 ![Alt text](./assets/svg/adventurer_regression.svg)
 
 
+### Sentiment analysis
+
+![Alt text](./assets/svg/sentiment_scores.svg)
+
 <!-- FAROUK BOUKIL -->
 ### Likelihood & ratings/reviews analysis
 
