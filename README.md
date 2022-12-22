@@ -99,6 +99,7 @@ _Fig?: This plot shows...
 
 {% include beer_ratings_by_location.html %}
 _Fig?: This plot shows..._
+
 {% include beer_location_most_liked.html %}
 _Fig?: This plot shows...
 
@@ -106,8 +107,10 @@ _Fig?: This plot shows...
 
 {% include top_beer_styles.html %}
 _Fig?: This plot shows..._
+
 {% include beer_liked_beer_styles.html %}
 _Fig?: This plot shows..._
+
 {% include adventurer_least_liked_beer_styles.html %}
 _Fig?: This plot shows..._
 
