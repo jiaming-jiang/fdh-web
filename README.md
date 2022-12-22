@@ -108,7 +108,7 @@ _Fig?: This plot shows...
 {% include top_beer_styles.html %}
 _Fig?: This plot shows..._
 
-{% include beer_liked_beer_styles.html %}
+{% include top_liked_beer_styles.html %}
 _Fig?: This plot shows..._
 
 {% include adventurer_least_liked_beer_styles.html %}
