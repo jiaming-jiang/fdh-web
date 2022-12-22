@@ -226,7 +226,7 @@ footer {
   }
 }
 
-/* Farouk: stylization side bar*/
+/* Farouk: stylization of the side bar*/
 .side-bar{
   width: 250px;
   height: 100%;
@@ -270,8 +270,10 @@ footer {
   color: #ffffff;
   text-decoration: none;
 }
+
+/* Farouk: footer note*/
 .footer-note{
-  height:30px;
-  width:100%;
+  height:25px;
+  width:75%;
   background:#9e9e9e;
 }
