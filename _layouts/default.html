@@ -10,17 +10,6 @@
     <meta name="viewport" content="width=device-width">
   </head>
   <body>
-    <--! start: new-->
-    <div class="navigbar">
-        <h1>Menu</h1>
-        <ul>
-          <li><a href="#">menu</a></li>
-          <li><a href="#">menu</a></li>
-          <li><a href="#">menu</a></li>
-          <li><a href="#">menu</a></li>
-        </ul>
-    </div>
-    <--! end: new-->
     <div class="wrapper">
       <header>
         <h1>{{ site.title | default: site.github.repository_name }}</h1>
@@ -55,6 +44,19 @@
         {% endif %}
       </footer>
     </div>
+    
+    <!-- start: new navigation side bar-->
+    <div class="navigbar">
+        <h1>Menu</h1>
+        <ul>
+          <li><a href="#">menu</a></li>
+          <li><a href="#">menu</a></li>
+          <li><a href="#">menu</a></li>
+          <li><a href="#">menu</a></li>
+        </ul>
+    </div>
+    <!-- end: new navigation side bar-->
+    
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
 
 
