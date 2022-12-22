@@ -116,27 +116,9 @@ _Fig?: This plot shows..._
 
 
 ### Regression analysis
-Optimization terminated successfully.
-         Current function value: 0.232024
-         Iterations 8
-                         Results: Logit
-=================================================================
-Model:              Logit            Pseudo R-squared: 0.286     
-Dependent Variable: is_adv           AIC:              26508.8710
-Date:               2022-12-15 13:59 BIC:              26544.6818
-No. Observations:   57108            Log-Likelihood:   -13250.   
-Df Model:           3                LL-Null:          -18565.   
-Df Residuals:       57104            LLR p-value:      0.0000    
-Converged:          1.0000           Scale:            1.0000    
-No. Iterations:     8.0000                                       
-------------------------------------------------------------------
-             Coef.   Std.Err.      z      P>|z|    [0.025   0.975]
-------------------------------------------------------------------
-Intercept   -3.0607    0.0241  -126.7885  0.0000  -3.1080  -3.0133
-n_ratings   -1.0345    0.0662   -15.6172  0.0000  -1.1643  -0.9046
-avg_rating  -1.5879    0.0199   -79.9545  0.0000  -1.6268  -1.5490
-n_reviews    0.3761    0.0483     7.7854  0.0000   0.2814   0.4708
-=================================================================
+
+![Alt text](./assets/svg/adv_distribution.svg)
+
 
 <!-- FAROUK BOUKIL -->
 ### Likelihood & ratings/reviews analysis
