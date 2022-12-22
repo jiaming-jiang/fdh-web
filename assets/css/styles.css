@@ -236,6 +236,7 @@ footer {
   left: 0;
   padding: 20px 20px;
   text-align: left;
+  font-size: 20px;
 }
 .navig-bar ul{
   list-style:none;
@@ -251,5 +252,5 @@ footer {
 .navig-bar h1{
   color: #ffffff;
   text-decoration: none;
-  font-size: 32px;
+  font-size: 30px;
 }
