@@ -117,7 +117,7 @@ _Fig?: This plot shows..._
 
 ### Regression analysis
 
-![Alt text](./assets/svg/adv_distribution.svg)
+![Alt text](./assets/svg/adventurer_regression.svg)
 
 
 <!-- FAROUK BOUKIL -->
