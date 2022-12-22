@@ -226,12 +226,25 @@ footer {
   }
 }
 
-.navigbar{
-  width=250px;
-  height=100%;
-  background=#000080;
+/* Farouk: stylization of navigation side bar*/
+.navig-bar{
+  width: 250px;
+  height: 100%;
+  background: #000080;
   position: fixed;
-  top:0;
-  left:0;
-  padding:20px 30px;
+  top: 0;
+  left: 0;
+  padding: 20px 30px;
+}
+.navig-list{
+  list-style:none;
+  position:relative;
+}
+.navig-list li{
+  padding: 10px 0;
+}
+.navig-list li a{
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 14px;
 }
