@@ -66,7 +66,6 @@ A user which rates a certain amount a poorly rated beers.
 
 <br/>
 
-<!-- FAROUK BOUKIL -->
 ### User Classification
 
 ![Alt text](./assets/svg/adv_distribution.svg)
