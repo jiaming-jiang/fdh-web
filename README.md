@@ -123,7 +123,7 @@ _Fig?: This plot shows..._
 
 ![Alt text](./assets/svg/sentiment_scores.svg)
 
-<!-- FAROUK BOUKIL -->
+
 ### Likelihood & ratings/reviews analysis
 
 {% include ratings_and_cathegory_proba_analysis.html %}
@@ -134,7 +134,6 @@ TODO
 
 TODO
 
-<!-- FAROUK BOUKIL -->
 ### Time analysis
 
 {% include time_analysis_cat_perc_new_users.html %}{width=50%}
