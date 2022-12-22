@@ -1,5 +1,4 @@
 {% include head.html %}
-
 ![Beer Banner](./assets/img/beer_banner_extended.jpg "beer banner")
 
 # [BeerAdvocate](https://www.beeradvocate.com/), what kind of raters does the website attract?
@@ -67,6 +66,25 @@ A user which rates a certain amount a poorly rated beers.
 
 <br/>
 
+<!-- FAROUK BOUKIL -->
+### User Classification
+
+![Alt text](./assets/svg/adv_distribution.svg)
+
+TODO
+    
+![Alt text](./assets/svg/cfm_distribution.svg) 
+
+TODO
+    
+![Alt text](./assets/svg/exp_distribution.svg) 
+
+TODO
+   
+![Alt text](./assets/svg/xpl_distribution.svg)  
+
+TODO
+
 ### Categories overlap
 
 ![Alt text](./assets/svg/venn_diagram_categories.svg)  
@@ -93,34 +111,33 @@ _Fig?: This plot shows..._
 {% include adventurer_least_liked_beer_styles.html %}
 _Fig?: This plot shows..._
 
-### Time analysis
-
-{% include time_analysis_cat_perc_new_users.html %}{width=50%}
-_Fig?: This plot shows..._
-{% include time_analysis_cat_perc_new_users_2014.html %}
-_Fig?: This plot shows..._
-{% include time_analysis_new_user_count.html %}
-_Fig?: This plot shows..._
-
-
+<!-- FAROUK BOUKIL -->
 ### Likelihood & ratings/reviews analysis
 
 {% include ratings_and_cathegory_proba_analysis.html %}
-_Fig?: This plot shows..._
-{% include reviews_and_cathegory_proba_analysis.html %}
-_Fig?: This plot shows..._
 
-![Alt text](./assets/svg/adv_distribution.svg)
-    _Fig?: This plot shows..._
-    
-![Alt text](./assets/svg/cfm_distribution.svg) 
-    _Fig?: This plot shows..._
-    
-![Alt text](./assets/svg/exp_distribution.svg) 
-    _Fig?: This plot shows..._
-   
-![Alt text](./assets/svg/xpl_distribution.svg)  
-    _Fig?: This plot shows..._
+TODO
+
+{% include reviews_and_cathegory_proba_analysis.html %}
+
+TODO
+
+<!-- FAROUK BOUKIL -->
+### Time analysis
+
+{% include time_analysis_cat_perc_new_users.html %}{width=50%}
+
+TODO
+
+{% include time_analysis_cat_perc_new_users_2014.html %}
+
+TODO
+
+{% include time_analysis_new_user_count.html %}
+
+TODO
+
+
  
    
 
