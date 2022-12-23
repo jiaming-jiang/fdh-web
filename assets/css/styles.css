@@ -8,7 +8,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color:#854700;
+  color:#E29B0F;
   margin:0 0 20px;
 }
 
@@ -34,14 +34,14 @@ h2 {
 }
 
 h3, h4, h5, h6 {
-  color:#854700;
+  color:#E29B0F;
   font-size:20px;
   text-align: left;
   font-weight: 500;
 }
 
 a {
-  color:#E29B0F;
+  color:#854700;
   text-decoration:none;
 }
 
