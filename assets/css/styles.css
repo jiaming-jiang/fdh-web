@@ -240,7 +240,7 @@ footer {
   padding-top: 20px;
   padding-bottom: 20px;
   overflow-y: scroll;
-  right-padding: 10px;
+  right-padding: 2vw;
   text-align: left;
   font-size: 12px;
 }
@@ -281,8 +281,8 @@ footer {
 .footer-note{
   height:25px;
   left: 20vw;
-  right: 10vw;
-  width: 70vw;
+  right: 5vw;
+  width: 75vw;
   position: fixed;
   background:#c0c0c0;
   font-size:8;
