@@ -92,17 +92,29 @@ TODO
 
 In this section, we highlight the ratings and reviews tendencies of the four categories: XPL, ADV, CFM and EXP.
 
-In order to know if the number of ratings characterizes in some way each category, we plot the likelihood of a user belonging to a category as a function of the range in which his/her number of ratings falls. Each range below corresponds to an inter-quantile range of around 25% of the density of the number of ratings of all the studied users. As a quick reminder, those are the users from english speaking countries having at least 5 ratings. The figure below shows the result:
+In order to know if the number of ratings characterizes in some way each category, we plot the likelihood of a user belonging to a category as a function of the range in which his/her number of ratings falls. Each range corresponds to an inter-quantile range of around 25% of the density of the number of ratings of all the studied users. As a quick reminder, those are the users from english speaking countries having at least 5 ratings. The figure below shows the result.
 
-{% include ratings_and_cathegory_proba_analysis.html %}{width=100%}
+It is worth pointing out that we only consider 99% of the density as the remaining 1% contains only super users which have many folds more ratings than normal users. Since there are very few super users, their results may be non-conclusive because they may be non-representative of super users overall that is why treat them as outliers and discard them here.
 
-TODO
+{% include ratings_and_cathegory_proba_analysis.html %}
 
-Similarly, we filter the users having at least one review, and repeat the process. The figure below shows the result:
+We notice the following trends:
+* Adventurers (ADV) are more likely to have fewer ratings (100 ratings at most), but could also have more ratings. The probability is however almost halved for subsequent ranges where the number of ratings is larger than 100.
+* Conformists (CFM) are more likely to have so many ratings (more than 500 ratings).
+* Explorers (XPL) are almost as likely to have very few or so many ratings (more than 500 ratings).
+* EXP users (EXP) mostly have very few ratings (10 at most) and become quickly significantly less likely as the number of ratings increases.
 
-{% include reviews_and_cathegory_proba_analysis.html %}{width=100%}
+We can therefore deduce the following about:
+* Adventurers (ADV): the more ratings a user has, the less likely he/she tends to try out not so good beers. This is not explained by the unwillingness of users with many ratings to try bad beers, but rather by the fact that the average beer rating is quite high ($\approx$ 3.97/5 overall) so users who have a lot of ratings end up rating beers that on average have a good score which reduces the percentage of bad beers they rate and thus throws them off being classified as adventurers.
+* Conformists (CFM): the users who rate on average close to the average rating of a beer tend to have many ratings, unabiding by what one could expect.
+* EXP users (EXP): the users that rate beers close (0.2 average deviation from the true value) to the piecewise linear mapping of the BA score to the range [0, 5] do so unintentionally since they tend to have very few ratings. We can already deduce that the display of the BA score on the website has no significant influence on the way the users rate the beers.
+* Explorers (XPL): the users who tend to rate newly introduced beers or introduce new beers are more likely to have many or very few ratings.
 
-TODO
+In the same spirit, we filter the users having at least one review and repeat the process. The figure below shows the result:
+
+{% include reviews_and_cathegory_proba_analysis.html %}
+
+This time, we highlight the most important trend that is that the explorers (XPL) are overall the most likely to provide a review for the beers they rate.
 
 ## <a id="section_countries">Countries and User Categories</a>
 {% include top_countries_pie_chart.html %}{width=100%}
