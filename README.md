@@ -179,10 +179,10 @@ This time, we highlight the most important trend that is that the explorers (XPL
 {% include top_countries_pie_chart.html %}{width=100%}
 
 TODO
-  
+
 {% include 10highestLocationPerCategories.html %}{width=100%}
 
-TODO
+In order to get a clearer look on this disparities per location we can decompose the USA in the diffrent existing states. This graph allow us to view the locations with abnormal percentages of user within each categories. Clearly there is a high disparity of the percentages of users per location. Conformist and ... varies between 
   
 ## <a id="section_beers">Beers and User Categories</a>
 
