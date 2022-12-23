@@ -235,17 +235,6 @@ We performed a sentiment analysis on the reviews of the users of each category a
 Sentiments of review are mostly very positive for each category. The average sentiment is significantly above the threshold for positive sentiment. Conformist, explorers have the same average sentiment as the general user. However, expert-like are slighly more postive and adventurers slightly more negative compared to the general user.
 The disparity between the categories can be explained by they average rating, which is different as we mentioned above. However, the difference in average rating between categories is not fully translated into the sentiment analysis. Although the difference of average rating is huge between adventurers and the general user ($\approx$3.45 vs $\approx$3.89 for users in general), the difference of average sentiment is not that noticeable. This suggests some kind of "regression to the mean" phenomenon: Adventurers may have some reviews which may be more negative compared to the average review, the average sentiment of an adventurer seems to tend towards the average sentiment of beer reviews in general for [BeerAdvocate](https://beeradvocate.com) though, which seems to be quite positive.
 
-
-## <a id="section_personas">Categories' Personas</a>
-### Explorers (XPL)
-TODO
-### Conformists (CFM)
-TODO
-### Adventurers (ADV)
-TODO
-### Reference-like (EXP)
-TODO
-
 <!-- Farouk -->
 ## <a id="section_time_analysis">What Categories Does the Website Attract Most Overtime?</a>
 In this section, we she light on the attractiveness of [BeerAdvocate](https://beeradvocate.com) for each user category overtime. Firstly, we look at the yearly increments in the number of new users broken down by category. The figure below shows those increments for the period spanned by the data:
@@ -271,12 +260,30 @@ In the highlighted period, the sharpe increase in the increment of the explorers
 
 Accounting for the fact that we study the users from english speaking countries, 96% of them being from the USA since the website is most popular there, we were able to point out one major event that could explain this surge and that happened in the same period, around mid-May 2014, that is <a href=" https://www.craftbeer.com/news/american-craft-beer-week">American Craft Beer Week</a>. To sum it up, this is an event in which beer lovers get to explore and try new beers out from a variety of breweries. We believe that such an event, if not that event in particular, may have contributed to this surge in explorers (XPL), which in turn dominate the yearly increment of new classified users in 2014, which in turn contribute the most to the popularity of the website. This is another result that emphasizes on how much [BeerAdvocate](https://beeradvocate.com) is attractive to people willing to explore new beers.
 
+
+## <a id="section_personas">Categories' Personas</a>
+
+We converge our previous results into a summary of category personas that describe each category:
+
+### Explorers (XPL)
+TODO
+### Conformists (CFM)
+TODO
+### Adventurers (ADV)
+TODO
+### EXP users (EXP)
+TODO
+
+
 ## <a id="section_takeaways">Takeaways</a>
-In light of our analysis, we would like to highlight the following facts and improvements that could be made to the website:
+In light of our analysis and the personas we built, we would like to highlight the following improvements that could be made to the website:
 
-* TODO
-* TODO
-* TODO
-* TODO
+* Since the users that almost consistently top the contribution to the website’s popularity are explorers, the website’s administrators could benefit from adding features to their website that help users explore new beers in their area.
+* Having many explorers is in turn useful to boost the number of reviews in the website, since they are the most likely to provide reviews aside from possibly introducing new beers and enriching the website’s database.
+* Displaying the BA score does not really influence the user ratings since the EXP users tend to have very few ratings. Additionally, conformists do not dominate the website so we can eliminate the idea of any global herding effect damaging the user experience.
+* The website has been attracting adventurers consistently throughout the years so some features like displaying an ordering of beers per category via the BA score does not make users reluctant to trying beers with bad ratings. These users help make underrated beers more popular or confirm that bad beers are just bad.
+* The website could benefit from a sales system to allow users to try local beers but also international ones since the adventurers are willing to try beers from other countries for instance.
 
-On the other hand, this analysis is an example of a successful natural soft-clustering approach to grasp the user tendencies by category and to build personas that can be useful to improve the underlying service or platform. We believe our approach is fruitful in services that rely heavily on recommender systems where understanding and characterizing different classes of users may be helpful in predicting the best item suggestions.
+
+
+On the other hand, this analysis is an example of a successful natural soft-clustering approach to grasp the user tendencies by category and to build personas that can be useful to improve the underlying service or platform, in particular to improve UX. We believe our approach could be fruitful in services that rely heavily on recommender systems where understanding and characterizing different user categories may be helpful in predicting the best item suggestions.
