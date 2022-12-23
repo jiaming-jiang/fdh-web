@@ -129,7 +129,7 @@ The explorer score also follows a heavy-tailed distribution. To reiterate, by th
 
 ### <a id="section_overlap">To What Extent Do the Categories Overlap?</a>
 
-Since we do soft clustering, users have a score for each category. But how users who meet the threshold score to be in multiple categories ? We used a simple Venn diagram to visualize the overlap of categories. The Venn diagram show the number of users for each categories and the number of users who are in the intersection of multiple categories.
+Since we do soft clustering, users have a score for each category. But how users who meet the threshold score to be in multiple categories? We used a simple Venn diagram to visualize the overlap of categories. The Venn diagram show the number of users for each categories and the number of users who are in the intersection of multiple categories.
 
 
 ![Alt text](./assets/svg/venn_diagram_categories.svg) 
@@ -169,14 +169,14 @@ This time, we highlight the most important trend that is that the explorers (XPL
 
 ## <a id="section_countries">Are There More Users from a Specific Country for Certain Categories?</a>
 
-For our analysis, we took only users from the USA, Canada, UK and Australia. While most users in [BeerAdvocate](https://beeradvocate.com) come from the USA. Is the distribution of country the same for all categories ? The following interactive plot (you can select a category) shows the distributions of countries for the users for all users (ALL), conformist (CFM), explorer (XPL), adventurer (ADV) and EXP users.
+For our analysis, we took only users from the USA, Canada, UK and Australia. While most users in [BeerAdvocate](https://beeradvocate.com) come from the USA. Is the distribution of country the same for all categories? The following interactive plot (you can select a category) shows the distributions of countries for the users for all users (ALL), conformist (CFM), explorer (XPL), adventurer (ADV) and EXP users.
 
 {% include top_countries_pie_chart.html %}
 
 We can conclude from the plot that conformists (CFM) and EXP users (EXP) have the same country distribution as the distribution of all users regardless of categories.  
-However, we see a different distribution for explorers (XPL) and adventurers (ADV), with a higher propotion of users from these categories comming from Canada, England and Australia. This could potentially be due to a tendency for these users to rate beers from their own country or region more often. Indeed, since Canadian, English and Australian beers are more rare in [BeerAdvocate](https://beeradvocate.com), if the users from this countries rate the beers from their country more, there are more likely to rate beers with few or bad ratings.  
+However, we see a different distribution for explorers (XPL) and adventurers (ADV), with a higher proportion of users from these categories comming from Canada, England and Australia. This could potentially be due to a tendency for these users to rate beers from their own country or region more often. Indeed, since Canadian, English and Australian beers are more rare in [BeerAdvocate](https://beeradvocate.com), if the users from this countries rate the beers from their country more, they are more likely to rate beers with few or bad ratings.  
 
-The pie chart shows only the distribution of categories at the country level. However, we need to zoom in the USA to have a bigger picture since it's where most users in [BeerAdvocate](https://beeradvocate.com) come from. In order to get a clearer look on this disparities per location we can decompose the USA in the diffrent existing states. The following plot show the distribution of US state by categories.
+The pie chart shows only the distribution of categories at the country level. However, we need to zoom into the USA to have a bigger picture since it's where most users on [BeerAdvocate](https://beeradvocate.com) come from. In order to get a clearer look on this disparities per location, we can decompose the USA in the different existing states. The following plot show the distribution of the US state by categories.
 
 {% include 10highestLocationPerCategories.html %}
 
@@ -184,24 +184,24 @@ The pie chart shows only the distribution of categories at the country level. Ho
   
 ## <a id="section_beers">Do Different Categories Have Different Beer Preferences?</a>
 
-### Do users belonging to different categories on BeerAdvocate have similar preferences for the region of origin of beers ?
+### Do users belonging to different categories on BeerAdvocate have similar preferences for the region of origin of beers?
 
-Some region in the world have a high reputation in terms of brewing beers. We will first analysis to which country where the beer was brewed the ratings of users go to. The following interactive plot (you can click on categories) show, for each category, the percentage of rating that go to each location (US state and countries) ranked by highest percentage first. 
+Some regions in the world have a high reputation in terms of brewing beers. We will first analyze which country where the beer was brewed in the ratings of users go to. The following interactive plot (you can click on categories) shows, for each category, the percentage of ratings that go to each location (US state and countries) ranked by highest percentage first.. 
   
 {% include beer_ratings_by_location.html %}
   
-We can see a similar pattern for all categories: they rate beers from where they come from. Indeed, we see that most ratings go to the most populous states of the US. However, by selecting adventurer (ADV) and overall (ALL) only on the plot, we see that adventurers, while still rating beers from California a lot, have a different behaviour to the general rater. By selecting only 'adventurer' we see that they also rate beers from other countries a lot: beers from Canada, Germany, Belgium and England for example.  
-While Canada and England may not be surprising since a lot of adventurers come from these two countries. The other countries are more suprising since there is no user from Belgium and Germany from the users we considered. Beers from Belgium which are very famous have a high percent of ratings across all categories, however 5% of ratings from adventurer users go to beers brewed in Germany, while only 2% of ratings from users in general go to Germany. It seems like adventurers are more likely to rate beers from other countries than theirs compared to the other categories. 
-This behaviour can compared to explorers who also rates a lot of beers comming from Canada (we see that a lot of explorers are Canadian), but they don't rate beer from Germany as often as explorers.
+We can see a similar pattern for all categories: they rate beers from where they come from a lot. Indeed, we see that most ratings go to the most populous states of the US. However, by selecting adventurer (ADV) and overall (ALL) only on the plot, we see that adventurers, while still rating beers from California a lot, have a different behavior than the general rater. By selecting only adventurer (ADV) we see that they also rate beers from other countries a lot, such as beers from Canada, Germany, Belgium and England for example.  
+While Canada and England may not be surprising, since a lot of adventurers come from these two countries. The other countries are more suprising since there are no users from Belgium and Germany among the users we considered. Beers from Belgium, which are very famous have a high percentage of ratings across all categories, however 5% of ratings from adventurer users go to beers brewed in Germany, while only 2% of ratings from users in general go to beers brewed in Germany. It seems like adventurers are more likely to rate beers from other countries compared to the other categories. 
+This behavior can be compared to explorers who also rates a lot of beers coming from Canada (we see that many explorers are Canadian), but they don't rate beer from Germany as often as explorers do.
 
-We see that adventurers (ADV) don't rate the same kind of beers compared to the other user categories. However, do they have similar likings in terms of beer provenance? The following interactive plot (you can click on a category) shows the ratio between the average rating for each location compared to the average rating of a category of user. If the average rating for a location is above 1 (the dashed line) it means that users from the category selected like more beers from that location compared to the other beers they rated.
+We see that adventurers (ADV) don't rate the same kinds of beers compared to the other user categories. However, do they have similar likings in terms of beer provenance? The following interactive plot (you can click on a category) shows the ratio between the average rating for each location compared to the average rating of a category of users. If the average rating for a location is above 1 (the dashed line), it means that users from the selected category like beers from that location more compared to the other beers they rated.
 
 {% include beer_location_most_liked.html %}
   
-By selecting all categories, we see that conformists (CFM), EXP users and explorers (XPL) mostly agree on the best beer provenance. Moreover, they all have a similar liking compared to users in general (ALL).
-However, adventurers have different preferences. By clicking on adventurers (ADV) and overall (ALL) on the plot, we see for example that they like more beers from Belgium compared to the general users (ALL). There is also is a huge difference for beers from Scotland. Overall, they have very different opinions compared to the other categories.
+By selecting all categories, we see that conformists (CFM), EXP users and explorers (XPL) mostly agree on the best beer provenances. Moreover, they all have a similar likings compared to users in general (ALL).
+However, adventurers have different preferences. By clicking on adventurers (ADV) and overall (ALL) on the plot, we see, for example, that they like beers from Belgium more compared to the general users (ALL). There is also is a huge difference for beers from Scotland. Overall, they have very different opinions compared to the other categories.
 
-### Do users from different categories like the same beer styles ? 
+### Do users from different categories like the same beer styles? 
 
 Now that we concluded that conformists (CFM), EXP users and explorers (XPL) have similar behaviour in terms of ratings of beers towards location of origin of beers, and that adventurers (ADV) have a different behaviour. We can see our conclusion also applies to beer styles, which is also a very opinionated topic. 
 The following interactive plot (you can click on categories) is similar to the first plot for location of origin of beers. It displays  for each category, the percentage of rating that go to each bear style ranked by highest percentage first. 
@@ -225,7 +225,7 @@ The following plot show what are the most disliked style of beers for adventurer
 
 We notice that the American Adjunct Lager is present, while being the beer they rate the most. We can also notice other beers that they rate a lot while considering it not good (eg. Euro Pale Lager), suggesting that they rate a lot of beers that they don't like. However, this oudl not be true to conclude that they only rate beers they don't like. For example, their second most rated beer is American IPA, which is very popular for all users, and they don't seem to dislike them. This suggests that there behaviour is not orthogonal to the general user.
 
-## <a id="section_sent_analysis">How Does Reviews' Sentiment Analyis Compare to Ratings for each Category ?</a>
+## <a id="section_sent_analysis">How Does Reviews' Sentiment Analyis Compare to Ratings for each Category?</a>
 
 The different user categories don't have the same average rating: $\approx$3.92/5 for conformists (CFM), $\approx$4.39 for EXP users, $\approx$3.8 for explorers (XPL) and $\approx$3.45 for adventurers (ADV). The difference for ADV is due to the fact that they rate badly rate beers by definition. But how is this difference in average rating reflected in the sentiment of the reviews?
 We performed a sentiment analysis on the reviews of the users of each category and a sample of users took uniformly regardless of their category. The following plot shows the average "compound sentiment" for the beer reviews of each category using Vader sentiment analyser. The compound sentiment is considered a postive sentiment if its values is above 0.05, neutral if its between 0.05 and -0.05 and negative if it is below -0.05.  
@@ -233,7 +233,7 @@ We performed a sentiment analysis on the reviews of the users of each category a
 ![Alt text](./assets/svg/sentiment_scores.svg)
   
 Sentiments of review are mostly very positive for each category. The average sentiment is significantly above the threshold for positive sentiment. Conformist, explorers have the same average sentiment as the general user. However, expert-like are slighly more postive and adventurers slightly more negative compared to the general user.
-The disparity between the categories can be explained by they average rating, which is different as we mentioned above. However, the difference in average rating between categories is not fully translated into the sentiment analysis. Although the difference of average rating is huge between adventurers and the general user ($\approx$3.45 vs $\approx$3.89 for users in general), the difference of average sentiment is not that noticeable. This suggests some kind of "regression to the mean" phenomenon: Adventurers may have some reviews which may be more negative compared to the average review, the average sentiment of an adventurer seems to tend towards the average sentiment of beer reviews in general for [BeerAdvocate](https://beeradvocate.com) though, which seems to be quite positive.
+The disparity between the categories can be explained by they average rating, which is different for each category as we mentioned above. However, the difference in average rating between categories is not fully translated into the sentiment analysis. Although the difference of average rating is huge between adventurers and the general user ($\approx$3.45 vs $\approx$3.89 for users in general), the difference of average sentiment is not that noticeable. This suggests some kind of "regression to the mean" phenomenon: Adventurers may have some reviews which may be more negative compared to the average review, the average sentiment of an adventurer seems to tend towards the average sentiment of beer reviews in general for [BeerAdvocate](https://beeradvocate.com) though, which seems to be quite positive.
 
 
 ## <a id="section_personas">Categories' Personas</a>
