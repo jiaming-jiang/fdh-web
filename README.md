@@ -169,7 +169,7 @@ This time, we highlight the most important trend which is that the explorers (XP
 
 ## <a id="section_countries">Are There More Users from a Specific Country for Certain Categories?</a>
 
-For our analysis, we took only users from the USA, Canada, UK, and Australia. While most users in [BeerAdvocate](https://beeradvocate.com) come from the USA. Is the distribution of country the same for all categories? The following interactive plot (you can select a category) shows the distributions of countries for the users for all users (ALL), conformist (CFM), explorer (XPL), adventurer (ADV), and EXP users.
+For our analysis, we took only users from the USA, Canada, UK, and Australia. Note that most users in [BeerAdvocate](https://beeradvocate.com) come from the USA. Is the distribution of country the same for all categories? The following interactive plot (you can select a category) shows the distributions of countries for the users for all users (ALL), conformist (CFM), explorer (XPL), adventurer (ADV), and EXP users.
 
 {% include top_countries_pie_chart.html %}
 
