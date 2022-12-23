@@ -142,9 +142,9 @@ TODO
 TODO
 
 ### Categories' Overlap
-![Alt text](./assets/svg/venn_diagram_categories.svg)  
-  
-TODO
+![Alt text](./assets/svg/venn_diagram_categories.svg) 
+
+There is very few overlap between explorers, conformists and adventurers. While the number of users with two of these categories is not negligible, the number of users with all three categories is very low.
 
 <!-- Farouk -->
 ## <a id="section_ratings_reviews">Number of Ratings/Reviews and User Categories</a>
@@ -175,45 +175,66 @@ In the same spirit, we filter the users having at least one review and repeat th
 
 This time, we highlight the most important trend that is that the explorers (XPL) are overall the most likely to provide a review for the beers they rate.
 
-## <a id="section_countries">Countries and User Categories</a>
+## <a id="section_countries">Countries/States and User Categories</a>
 {% include top_countries_pie_chart.html %}{width=100%}
 
 TODO
+  
+{% include 10highestLocationPerCategories.html %}{width=100%}
 
+TODO
+  
 ## <a id="section_beers">Beers and User Categories</a>
 
 ### The Locations with the Most Rated and Most Liked Beers
-
+  
 {% include beer_ratings_by_location.html %}
+  
+We see a similar pattern for all categories, they rate beers from where they come from. Indeed, we see that most ratings go to the most populous states of the US. However, by selecting 'adventurer' and 'overall' only on the plot, we see that adventurers, while still rating beers from California a lot, have a different behaviour to the general rater. Indeed, by selecting only 'adventurer' we see that they also rate beers from other countries a lot: beers from Canada, Germany, Belgium and England for example.  
+While Canada may not be surprising since a lot of adventurer come from Canada, and also Belgium is not that suprising because we see that a lot of rated beers come from Belgium if we take the ratings overall. The other countries are more suprising since there is no user from Germany and England from the users we considered. Also, we can see that this countries have a low number of ratings for all other categories.  
 
-TODO
+It seems like adventurers are more likely to rate beers from other countries than the other categories.
+
 
 {% include beer_location_most_liked.html %}
-
-TODO
+  
+Conformist, EXP and explorers mostly agree on the best beer provenance. Moreover, they all have a similar liking compared to users in general.
+However, adventurers have different preferences. By selecting "adventurer" and "overall" on the plot, we see for example that they like more beers from Belgium compared to the general users. There is also is a huge difference for beers from Scotland. Overall, they have very different opinions compared to the other categories.
 
 ### The Most Rated and Most Liked Beer Styles
 
 {% include top_beer_styles.html %}
-
-TODO
+  
+When we select 'overall' and 'conformist' on the plot, we see that these two categories are very similar in terms of rated beer styles.
+However, by selecting 'overall' and 'expert_like' or 'explorer' we see a similar ranking, but the distribution is not the same. This motivates the idea that 'conformist' are the closest user to the lambda user.  
+Finally, we see a very different ranking and distribution for the adventurers. It seems like they rate very different kind of beers compared to the other users.
 
 {% include top_liked_beer_styles.html %}
 
-TODO
+Conformist, explorers and expert-like rate style of beers similarly compared to their average rating. It seems like they all agree that "Geuze", a belgian style of beer, is the best style overall.  
+The only category that doesn't agree with this consensus is the adventurers. The Gueuzes are ranked 11 in their ranking. Their prefered style is quadrupel, which is also belgian and it's not the most common type of beer (at least for Americans).
 
 {% include adventurer_least_liked_beer_styles.html %}
-
-TODO
-
+  
+By considering the top 10 worst style of beers according to adventurers, we see that the American Adjunct Lager is present, while being one of the most rated beers. We can also notice other beers that they rate a lot while considering it not good (eg. Euro Pale Lager). But we saw as well that adventurer also rate some popular beers a lot like the very popular American IPA. So they don't only rate beers styles that are considered as bad by them.
 
 ## <a id="section_reg_analysis">Regression analysis</a>
 ![Alt text](./assets/svg/adventurer_regression.svg)
+  
+The fit for the regression analysis of the categroy adventurer with the 3 predictors number of ratings, average rating and number of review has a fit of 0.286 which is good for only 3 predictors. Also, the 3 predictors have a very small p value, which suggests that they all have predictive power for the user category adventurer.  
+By looking at the value of the coefficients of the logistic regression obtained, we see that clearly the average rating is an important feature to determine an adventurer. Which is not that suprising since we their mean rating is $\approx$3.45/5 which is quite different from the $\approx$3.89/5 mean rating of the general user. This is explained by the formula for the adventurer score. Adventurers have rated a large number of beers with an average rating for all user less than 3.25/5. Our analyis suggests then that the adventurers are user who like to try beers with bad ratings, but they don't particularly like them more compared to the general users, they are not more soft on their ratings.
+  
+
 
 TODO
 
 ## <a id="section_sent_analysis">Sentiment analysis on User Reviews</a>
 ![Alt text](./assets/svg/sentiment_scores.svg)
+
+The plot shows the average "compound sentiment" for the beer reviews of each category using Vader sentiment analyser. The compound sentiment is considered a postive sentiment if its values is above 0.05, neutral if its between 0.05 and -0.05 and negative if it is below -0.05.  
+Sentiment of review are mostly very positive for each category. The average sentiment is significantly above the threshold for positive sentiment. Conformist, explorers have the same average sentiment as the general user. However, expert-like are slighly more postive and adventurers slightly more negative compared to the general user.
+This can be easily explained by looking at the mean rating for each category ie. $\approx$4.39/5 for exp users and $\approx$3.45/5 for adventurers, while conformist and explorers have the same mean rating as the general user.
+The average rating of $\approx$3.45/5 for adventurers is not surprising because by definition they rate beers which are already rated badly by other users. However, the sentiment analyis show that they are not very negative in their reviews. Indeed, while the difference of average rating is huge between adventurers and the general user, the difference of average sentiment is not that noticeable.
 
 TODO
 
