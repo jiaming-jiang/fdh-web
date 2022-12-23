@@ -107,7 +107,7 @@ These users are willing to risk trying out bad beers. We are interested in such 
 
 <br>
 
-## <a id="section_classification">User Classification</a>
+## <a id="section_clustering">User Clustering</a>
 
 In order to choose adequate thresholds to classify the users based on the scores defined in the previous section, we look at the distributions of these scores. The figures below plot those distributions in real and logarithmic scales:
 
@@ -127,7 +127,7 @@ The EXP score looks more like a skewed gaussian, but it is not since it is heavy
 
 The explorer score also follows a heavy-tailed distribution. To reiterate, by the interpretability of this score, given a threshold of approximately 0.2, we classify as explorers the users that figure in the first 10 raters of at least 20% of the beers they rate.
 
-### How many users have multiple categories ?
+### <a id="section_overlap">To What Extent Do the Categories Overlap?</a>
 
 Since we do soft clustering, users have a score for each category. But how users who meet the threshold score to be in multiple categories ? We used a simple Venn diagram to visualize the overlap of categories. The Venn diagram show the number of users for each categories and the number of users who are in the intersection of multiple categories.
 
@@ -139,7 +139,7 @@ As we can see, there are very few overlaps between explorers, conformists and ad
 # <a id="section_story">The Story Overview</a>
 In the following sections, we will study the categories defined previously on many levels: beer style preferences, locations, ratings, reviews...etc to extract as much information about these categories as possible to build relevant personas that can be leveraged by the administrators to improve the UX of their website.
 
-## <a id="section_ratings_reviews">Number of Ratings/Reviews and User Categories</a>
+## <a id="section_ratings_reviews">How Do the Number of Ratings and Reviews Characterize the Categories?</a>
 
 In this section, we highlight the ratings and reviews tendencies of the four categories: XPL, ADV, CFM and EXP.
 
@@ -167,7 +167,7 @@ In the same spirit, we filter the users having at least one review and repeat th
 
 This time, we highlight the most important trend that is that the explorers (XPL) are overall the most likely to provide a review for the beers they rate.
 
-## <a id="section_countries">"Are there more users from a specific country for certain categories?"</a>
+## <a id="section_countries">Are There More Users from a Specific Country for Certain Categories?</a>
 
 For our analysis, we took only users from the USA, Canada, UK and Australia. While most users in beeradvocate come from the USA. Is the distribution of country the same for all categories ? The following interactive plot (you can select a category) shows the distributions of countries for the users for all users (ALL), conformist (CFM), explorer (XPL), adventurer (ADV) and EXP users.
 
@@ -182,9 +182,9 @@ The pie chart shows only the distribution of categories at the country level. Ho
 
  Clearly there is a high disparity of the percentages of users per location. CFM and EXP varies between twice and one time the overall categories value (10% and 3% of the user respectively). However the XPL and ADV categories have higher disparities with the Austria England and Canada having extremely high percentages. 60% of Austrian users are explorer this is more than 4 times the overall percentage of 13%. The concentration of XPL in these countries can be explained by the extremly low number of selected users in these countries. Austria 229 Canada 1593 and England 329. This is in fact so low that when a user rate a local beer there is a high chance that this beer has been rated less than 10 times in the meantime classifying them as XPL. In order to explains the ADV spike in this countries we can look at the average rating of the beers that these 3 countries's users rate indeed Austria is the countrie with the users rating the beers with the lowest average rating (3.64), England is the second (3.70) and Canada is the 4th (3.75). This explain why Australian, English and Canadian users have a tendancy to rate beers with low average rating and be classified as ADV.
   
-## <a id="section_beers">Beers and User Categories</a>
+## <a id="section_beers">Do Different Categories Have Different Beer Preferences?</a>
 
-### Do users with different categories on BeerAdvocate have similar preferences for region of origin of beers ?
+### Do users belonging to different categories on BeerAdvocate have similar preferences for the region of origin of beers ?
 
 Some region in the world have a high reputation in terms of brewing beers. We will first analysis to which country where the beer was brewed the ratings of users go to. The following interactive plot (you can click on categories) show, for each category, the percentage of rating that go to each location (US state and countries) ranked by highest percentage first. 
   
@@ -201,7 +201,7 @@ We see that adventurers (ADV) don't rate the same kind of beers compared to the 
 By selecting all categories, we see that conformists (CFM), EXP users and explorers (XPL) mostly agree on the best beer provenance. Moreover, they all have a similar liking compared to users in general (ALL).
 However, adventurers have different preferences. By clicking on adventurers (ADV) and overall (ALL) on the plot, we see for example that they like more beers from Belgium compared to the general users (ALL). There is also is a huge difference for beers from Scotland. Overall, they have very different opinions compared to the other categories.
 
-### Do user from different categories like the same beer styles ? 
+### Do users from different categories like the same beer styles ? 
 
 Now that we concluded that conformists (CFM), EXP users and explorers (XPL) have similar behaviour in terms of ratings of beers towards location of origin of beers, and that adventurers (ADV) have a different behaviour. We can see our conclusion also applies to beer styles, which is also a very opinionated topic. 
 The following interactive plot (you can click on categories) is similar to the first plot for location of origin of beers. It displays  for each category, the percentage of rating that go to each bear style ranked by highest percentage first. 
@@ -225,7 +225,7 @@ The following plot show what are the most disliked style of beers for adventurer
 
 We notice that the American Adjunct Lager is present, while being the beer they rate the most. We can also notice other beers that they rate a lot while considering it not good (eg. Euro Pale Lager), suggesting that they rate a lot of beers that they don't like. However, this oudl not be true to conclude that they only rate beers they don't like. For example, their second most rated beer is American IPA, which is very popular for all users, and they don't seem to dislike them. This suggests that there behaviour is not orthogonal to the general user.
 
-## <a id="section_sent_analysis">Sentiment analysis on User Reviews</a> How the sentiment analyis of reviews compare to ratings ?
+## <a id="section_sent_analysis">How Does Reviews' Sentiment Analyis Compare to Ratings?</a>
 
 The different user categories don't have the same average rating: $\approx$3.92/5 for conformists (CFM), $\approx$4.39 for EXP users, $\approx$3.8 for explorers (XPL) and $\approx$3.45 for adventurers (ADV). The difference for ADV is due to the fact that they rate badly rate beers by definition. But how is this difference in average rating reflected in the sentiment of the reviews?
 We performed a sentiment analysis on the reviews of the users of each category and a sample of users took uniformly regardless of their category. The following plot shows the average "compound sentiment" for the beer reviews of each category using Vader sentiment analyser. The compound sentiment is considered a postive sentiment if its values is above 0.05, neutral if its between 0.05 and -0.05 and negative if it is below -0.05.  
@@ -247,7 +247,7 @@ TODO
 TODO
 
 <!-- Farouk -->
-## <a id="section_time_analysis">Time Analysis of the Attractiveness of the Website</a>
+## <a id="section_time_analysis">What Categories Does the Website Attract Most Overtime?</a>
 In this section, we she light on the attractiveness of [BeerAdvocate](https://beeradvocate.com) for each user category overtime. Firstly, we look at the yearly increments in the number of new users broken down by category. The figure below shows those increments for the period spanned by the data:
 
 {% include time_analysis_new_user_count.html %}
