@@ -10,7 +10,7 @@ In this project, we soft-cluster the users of beeradvocate.com within a set of p
 ### Research questions
 
 ## <a id="section_dataset">Dataset</a>
-We use the dataset provided by BeerAdvocate at this [link](https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9uTwG9uNsN4TCF).
+We use the [dataset](https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9uTwG9uNsN4TCF) provided by the teaching team of "CS-401:Applied Data Analysis" at EPFL for the year 2022.
 
 ## <a id="section_clustering_approach">The Approach to Soft-Clustering the Users</a>
 
@@ -22,7 +22,7 @@ This category may be regarded as an indicator of hearding effect where users ten
 A user who rates beers close to their average rating, meaning that on average this user deviates little from the average opinion on the beers he/she rates.
 
 <details>
-  <summary>Show more details</summary>
+  <summary>Show more</summary>
   
   A user $u$ is a conformist if he/she has a high conformism score that measures how much the user sticks with the average opinion on the beers he/she rates. The score is defined as follows:
 
@@ -35,13 +35,15 @@ A user who rates beers close to their average rating, meaning that on average th
    
 </details>
 
+<br>
+
 ### **EXP user** 
 A user that rates beers close to the piecewise linear mapping of the beers' BA scores to their corresponding equivalent in the range [0, 5]. The BA score is a reference score  displayed on the website to give the users and idea about how the beer ranks among the beers of the same style, and is a value initially in the range [0, 100].
 
 For lack of a better name, we will reference these users as the EXP users refering to a somewhat "structured" way of rating beers that may indicate being influenced by the BA score displayed on the website.
 
 <details>
-  <summary>Show more details</summary>
+  <summary>Show more</summary>
 
   A user $u$ is an EXP user if he/she rates, on average, beers close to their BA score scaled down to the range [0, 5] using the following piecewise linear mapping based on the <a href="https://www.beeradvocate.com/community/threads/beeradvocate-ratings-explained.184726/">BA score range and meaning revealed by the website's administrators</a>, to which we believe this mapping corresponds best:
   
@@ -64,6 +66,7 @@ For lack of a better name, we will reference these users as the EXP users referi
   Note that 94.5% of rated beers in the data available to us have a BA score.
 </details>
 
+<br>
 
 ### **Explorer:**
 A user that rates beers having a few ratings only if not none at all. In the latter case, we consider that user  to be the one who added the beer to the website. (yes, beeradvocate.com allows any user to add new beers to its database.)
@@ -71,7 +74,7 @@ A user that rates beers having a few ratings only if not none at all. In the lat
 These users therefore shed light (positively or negatively) on unpopular beers by rating them, and some of them help populate the website with new beers which enriches the user experience on the website. 
 
 <details>
-  <summary>Show more details</summary>
+  <summary>Show more</summary>
   
   A user $u$ is an explorer if, often enough, among the beers he rated, he/she was among the first 10 users to rate that beer. The score is therefore: 
 
@@ -82,13 +85,15 @@ These users therefore shed light (positively or negatively) on unpopular beers b
   This score provides us with information about which users contribute to enriching the experience on the website, either because they rate beers that do not get much attention, or because they "introduce" new beers on the website by being the first people to rate those beers.
 </details>
 
+<br>
+
 ### **Adventurer:**
 A user that rates often enough beers that are slightly okay at best. 
 
 These users are willing to risk trying out bad beers. We are interested in such users because they may contribute to the visibility of underated beers in the website and so indirectly to the user experience.
 
 <details>
-  <summary>Show more details</summary>
+  <summary>Show more</summary>
   
   A user $u$ is an adventurer if he/she often enough risks trying out beers that have a bad rating at the time at which they rate them (less than 3.25/5, knowing that the average is at $\approx$ 3.97/5). The corresponding score is the following:
 
@@ -97,6 +102,8 @@ These users are willing to risk trying out bad beers. We are interested in such 
   - the time $t_{u,b}$  is the time at which user $u$ rates beer $b$.
   - $T=3.25$ is a cut-off determined empirically based on the data.
 </details>
+
+<br>
 
 ## <a id="section_classification">User Classification</a>
 
