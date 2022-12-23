@@ -135,7 +135,7 @@ The explorer score also follows a heavy-tailed distribution. To reiterate, by th
 
 There is very few overlap between explorers, conformists and adventurers. While the number of users with two of these categories is not negligible, the number of users with all three categories is very low.
 
-# The Story Overview
+# <a id="section_story">The Story Overview</a>
 In the following sections, we will study the categories defined previously on many levels: beer style preferences, locations, ratings, reviews...etc to extract as much information about these categories as possible to build relevant personas that can be leveraged by the administrators to improve the UX of their website.
 
 ## <a id="section_ratings_reviews">Number of Ratings/Reviews and User Categories</a>
@@ -208,13 +208,6 @@ The only category that doesn't agree with this consensus is the adventurers. The
 {% include adventurer_least_liked_beer_styles.html %}
   
 By considering the top 10 worst style of beers according to adventurers, we see that the American Adjunct Lager is present, while being one of the most rated beers. We can also notice other beers that they rate a lot while considering it not good (eg. Euro Pale Lager). But we saw as well that adventurer also rate some popular beers a lot like the very popular American IPA. So they don't only rate beers styles that are considered as bad by them.
-
-## <a id="section_reg_analysis">Regression analysis</a>
-![Alt text](./assets/svg/adventurer_regression.svg)
-  
-The fit for the regression analysis of the categroy adventurer with the 3 predictors number of ratings, average rating and number of review has a fit of 0.286 which is good for only 3 predictors. Also, the 3 predictors have a very small p value, which suggests that they all have predictive power for the user category adventurer.  
-By looking at the value of the coefficients of the logistic regression obtained, we see that clearly the average rating is an important feature to determine an adventurer. Which is not that suprising since we their mean rating is $\approx$3.45/5 which is quite different from the $\approx$3.89/5 mean rating of the general user. This is explained by the formula for the adventurer score. Adventurers have rated a large number of beers with an average rating for all user less than 3.25/5. Our analyis suggests then that the adventurers are user who like to try beers with bad ratings, but they don't particularly like them more compared to the general users, they are not more soft on their ratings.
-
 
 ## <a id="section_sent_analysis">Sentiment analysis on User Reviews</a>
 ![Alt text](./assets/svg/sentiment_scores.svg)
