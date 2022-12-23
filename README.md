@@ -167,9 +167,9 @@ In the same spirit, we filter the users having at least one review and repeat th
 
 This time, we highlight the most important trend that is that the explorers (XPL) are overall the most likely to provide a review for the beers they rate.
 
-## <a id="section_countries">Are there more user of some country for some categories?</a>
+## <a id="section_countries">"Are there more users from a specific country for certain categories?"</a>
 
-For our analyis, we took only users from the USA, Canada, UK and Australia. While most users in beeradvocate come from the USA, is the distribution of country the same for all categories ? The following interactive plot (you can select a category) shows the distributions of countries for the users for all users (ALL), conformist (CFM), explorer (XPL), adventurer (ADV) and EXP users.
+For our analysis, we took only users from the USA, Canada, UK and Australia. While most users in beeradvocate come from the USA. Is the distribution of country the same for all categories ? The following interactive plot (you can select a category) shows the distributions of countries for the users for all users (ALL), conformist (CFM), explorer (XPL), adventurer (ADV) and EXP users.
 
 {% include top_countries_pie_chart.html %}{width=100%}
 
@@ -178,7 +178,7 @@ However, we see a different distribution for explorers (XPL) and adventurers (AD
 
 The pie chart shows only the distribution of categories at the country level. However, we need to zoom in the USA to have a bigger picture since it's where most users in BeerAdvocate come from. In order to get a clearer look on this disparities per location we can decompose the USA in the diffrent existing states. The following plot show the distribution of US state by categories.
 
-{% include 10highestLocationPerCategories.html %}{width=100%}
+{% include 10highestLocationPerCategories.html %}
 
  Clearly there is a high disparity of the percentages of users per location. CFM and EXP varies between twice and one time the overall categories value (10% and 3% of the user respectively). However the XPL and ADV categories have higher disparities with the Austria England and Canada having extremely high percentages. 60% of Austrian users are explorer this is more than 4 times the overall percentage of 13%. The concentration of XPL in these countries can be explained by the extremly low number of selected users in these countries. Austria 229 Canada 1593 and England 329. This is in fact so low that when a user rate a local beer there is a high chance that this beer has been rated less than 10 times in the meantime classifying them as XPL. In order to explains the ADV spike in this countries we can look at the average rating of the beers that these 3 countries's users rate indeed Austria is the countrie with the users rating the beers with the lowest average rating (3.64), England is the second (3.70) and Canada is the 4th (3.75). This explain why Australian, English and Canadian users have a tendancy to rate beers with low average rating and be classified as ADV.
   
@@ -227,14 +227,13 @@ We notice that the American Adjunct Lager is present, while being the beer they 
 
 ## <a id="section_sent_analysis">Sentiment analysis on User Reviews</a> Do some categories have more postive reviews ?
 
-The different user categories have different average rating: 
+The different user categories don't have the same average rating: $\approx$3.92/5 for conformists (CFM), $\approx$4.39 for EXP users, $\approx$3.8 for explorers (XPL) and $\approx$3.45 for adventurers (ADV). The difference for ADV is due to the fact that they rate badly rate beers by definition. But how is this difference in average rating reflected in the sentiment of the reviews?
+We performed a sentiment analysis on the reviews of the users of each category and a sample of users took uniformly regardless of their category. The following plot shows the average "compound sentiment" for the beer reviews of each category using Vader sentiment analyser. The compound sentiment is considered a postive sentiment if its values is above 0.05, neutral if its between 0.05 and -0.05 and negative if it is below -0.05.  
 
 ![Alt text](./assets/svg/sentiment_scores.svg)
-
-The plot shows the average "compound sentiment" for the beer reviews of each category using Vader sentiment analyser. The compound sentiment is considered a postive sentiment if its values is above 0.05, neutral if its between 0.05 and -0.05 and negative if it is below -0.05.  
-Sentiment of review are mostly very positive for each category. The average sentiment is significantly above the threshold for positive sentiment. Conformist, explorers have the same average sentiment as the general user. However, expert-like are slighly more postive and adventurers slightly more negative compared to the general user.
-This can be easily explained by looking at the mean rating for each category ie. $\approx$4.39/5 for exp users and $\approx$3.45/5 for adventurers, while conformist and explorers have the same mean rating as the general user.
-The average rating of $\approx$3.45/5 for adventurers is not surprising because by definition they rate beers which are already rated badly by other users. However, the sentiment analyis show that they are not very negative in their reviews. Indeed, while the difference of average rating is huge between adventurers and the general user, the difference of average sentiment is not that noticeable.
+  
+Sentiments of review are mostly very positive for each category. The average sentiment is significantly above the threshold for positive sentiment. Conformist, explorers have the same average sentiment as the general user. However, expert-like are slighly more postive and adventurers slightly more negative compared to the general user.
+The disparity between the categories can be explained by they average rating, which is different as we mentioned above. However, the difference in average rating between categories is not fully translated into the sentiment analysis. Although the difference of average rating is huge between adventurers and the general user ($\approx$3.45 vs $\approx$3.89 for users in general), the difference of average sentiment is not that noticeable. This suggests some kind of "regression to the mean" phenomenon: Adventurers may have some reviews which may be more negative compared to the average review, the average sentiment of an adventurer seems to tend towards the average sentiment of beer reviews in general for BeerAdvocate though, which seems to be quite positive.
 
 
 ## <a id="section_personas">Categories' Personas</a>
