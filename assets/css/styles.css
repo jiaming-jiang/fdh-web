@@ -227,7 +227,7 @@ footer {
   }
 }
 
-/* Farouk: stylization of the side bar*/
+/* Farouk: stylization of the side bar + Juliette: scrollbar*/
 .side-bar{
   width: 15%;
   height: 100%;
@@ -235,9 +235,11 @@ footer {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 20px 20px;
+  bottom: 0;
+  overflow-y: scroll;
+  /*padding: 5px 20px;*/
   text-align: left;
-  font-size: 15px;
+  font-size: 12px;
 }
 .navig-section ul{
   list-style:none;
@@ -253,7 +255,7 @@ footer {
 .navig-section h1{
   color: #ffffff;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 20px;
 }
 .externals-section h1{
   color: #ffffff;

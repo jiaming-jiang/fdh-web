@@ -170,10 +170,10 @@ This time, we highlight the most important trend that is that the explorers (XPL
 {% include top_countries_pie_chart.html %}{width=100%}
 
 TODO
-  
+
 {% include 10highestLocationPerCategories.html %}{width=100%}
 
-TODO
+In order to get a clearer look on this disparities per location we can decompose the USA in the diffrent existing states. This graph allow us to view the locations with abnormal percentages of user within each categories. Clearly there is a high disparity of the percentages of users per location. Conformist and ... varies between 
   
 ## <a id="section_beers">Beers and User Categories</a>
 
@@ -258,7 +258,7 @@ Let us focus on the highlighted period corresponding to year 2014. We clearly se
 
 In the highlighted period, the sharpe increase in the increment of the explorers (XPL) stands out since it doubles in one month and almost triples in two months, with respect to the month of May. However, prior to the month of May in the same year, the contributions of the three major categories are rather comparable. 
 
-Accounting for the fact that we study the users from english speaking countries, 96% of them being from the USA since the website is most popular there, we were able to point out one major event that could explain this surge and that happened in the same period, around mid-May 2014, that is <a href=" https://www.craftbeer.com/news/american-craft-beer-weekz">American Craft Beer Week</a>. To sum it up, this is an event in which beer lovers get to explore and try new beers out from a variety of breweries. We believe that such an event, if not that event in particular, may have contributed to this surge in explorers (XPL), which in turn dominate the yearly increment of new classified users in 2014, which in turn contribute the most to the popularity of the website. This is another result that emphasizes on how much beeradvocate.com is attractive to people willing to explore new beers.
+Accounting for the fact that we study the users from english speaking countries, 96% of them being from the USA since the website is most popular there, we were able to point out one major event that could explain this surge and that happened in the same period, around mid-May 2014, that is <a href=" https://www.craftbeer.com/news/american-craft-beer-week">American Craft Beer Week</a>. To sum it up, this is an event in which beer lovers get to explore and try new beers out from a variety of breweries. We believe that such an event, if not that event in particular, may have contributed to this surge in explorers (XPL), which in turn dominate the yearly increment of new classified users in 2014, which in turn contribute the most to the popularity of the website. This is another result that emphasizes on how much beeradvocate.com is attractive to people willing to explore new beers.
 
 ## <a id="section_takeaways">Takeaways</a>
 In light of our analysis, we would like to highlight the following facts and improvements that could be made to the website:
