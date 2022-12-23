@@ -41,28 +41,17 @@ This category may be regarded as an indicator of hearding effect where users ten
 <br>
 
 ### **EXP user** 
-A user that rates beers close to the piecewise linear mapping of the beers' BA scores to their corresponding equivalent in the range [0, 5]. The BA score is a reference score  displayed on the website to give the users and idea about how the beer ranks among the beers of the same style, and is a value initially in the range [0, 100].
+A user that rates beers close the BA score that is displayed on the website for most beers. According to beeradvocate.com administrators, the BA score is a reference score displayed on the website to give the users and idea about how a beer ranks among the beers of the same style.
+
+<i>Note that 94.5% of rated beers in the data available to us have a BA score.</i>
 
 For lack of a better name, we will reference these users as the EXP users refering to a somewhat "structured" way of rating beers that may indicate being influenced by the BA score displayed on the website.
 
 <details>
   <summary>Show more</summary>
-
   A user $u$ is an EXP user if he/she rates, on average, beers close to their BA score scaled down to the range [0, 5] using the following piecewise linear mapping based on the <a href="https://www.beeradvocate.com/community/threads/beeradvocate-ratings-explained.184726/">BA score range and meaning revealed by the website's administrators</a>, to which we believe this mapping corresponds best:
   
-  world class : 95 - 100 mapped to ]4.75; 5]
- 
-  outstanding : 90 - 94  mapped to ]4.5; 4.75]
- 
-  very good   : 85 - 89  mapped to ]4; 4.5]
-  
-  good        : 80 - 84  mapped to ]3.5; 4]
-  
-  okay        : 70 - 79  mapped to ]3; 3.5]
-  
-  poor        : 60 - 69  mapped to ]2; 3]
-  
-  awful       : <= 59    mapped to ]0; 2]
+ {world class : 95 - 100 mapped to ]4.75; 5], outstanding : 90 - 94  mapped to ]4.5; 4.75], very good : 85 - 89  mapped to ]4; 4.5], good : 80 - 84  mapped to ]3.5; 4], okay : 70 - 79  mapped to ]3; 3.5], poor : 60 - 69 mapped to ]2; 3], awful : <= 59 mapped to ]0; 2]}.
   
   The score is defined as follows:
   
@@ -75,8 +64,6 @@ For lack of a better name, we will reference these users as the EXP users referi
   $\sigma_b$ is the standard deviation of the ratings of the beer $b$.
   
   $BA_b$ is the BA score a beer $b$. 
-  
-  Note that 94.5% of rated beers in the data available to us have a BA score.
 </details>
 
 <br>
@@ -88,6 +75,7 @@ These users therefore shed light (positively or negatively) on unpopular beers b
 
 <details>
   <summary>Show more</summary>
+  This score provides us with information about which users contribute to enriching the experience on the website, either because they rate beers that do not get much attention, or because they "introduce" new beers on the website by being the first people to rate those beers.
   
   A user $u$ is an explorer if, often enough, among the beers he rated, he/she was among the first 10 users to rate that beer. The score is therefore: 
 
@@ -97,7 +85,6 @@ These users therefore shed light (positively or negatively) on unpopular beers b
 
   $U_{10}(b)$ is the set of at most 10 users that first rated the beer $b$.
   
-  This score provides us with information about which users contribute to enriching the experience on the website, either because they rate beers that do not get much attention, or because they "introduce" new beers on the website by being the first people to rate those beers.
 </details>
 
 <br>
@@ -125,28 +112,32 @@ These users are willing to risk trying out bad beers. We are interested in such 
 
 ## <a id="section_classification">User Classification</a>
 
+In order to choose adequate thresholds to classify the users based on the scores defined in the previous section, we look at the distributions of these scores. The figures below plot those distributions in real and logarithmic scales:
+
 ![Alt text](./assets/svg/adv_distribution.svg)
 
-TODO
+The adventurer score has a heavy-tail distributed. By the interpretability of this score, a cut-off or threshold at 0.2 classifies as adventurers the users for which at least 20% of the beers they rate have a slightly okay at best rating at the moment at which they rate them. We use this threshold that corresponds to the 90$^{th}$ percentile of the ADV score distribution.
     
 ![Alt text](./assets/svg/cfm_distribution.svg) 
 
-TODO
+The conformist score also has a heavy-tail distributed. Here again, we choose the threshhold that corresponds to the 90^{th} percentile that is -0.35, which by the interpretability of this score means that we classify as conformists the users who deviate on average by less than 0.35 from the average opinion.
     
 ![Alt text](./assets/svg/exp_distribution.svg) 
 
-TODO
+The EXP score looks more like a skewed gaussian, but it is not since it is heavy-tailed. Again by the interpretability of this score, a threshold at -0.2 classifies users that deviate on average by less than 0.2 from the displayed BA score as EXP users.
    
 ![Alt text](./assets/svg/xpl_distribution.svg)  
 
-TODO
+The explorer score also follows a heavy-tailed distribution. To reiterate, by the interpretability of this score, given a threshold of approximately 0.2, we classify as explorers the users that figure in the first 10 raters of at least 20% of the beers they rate.
 
 ### Categories' Overlap
 ![Alt text](./assets/svg/venn_diagram_categories.svg) 
 
 There is very few overlap between explorers, conformists and adventurers. While the number of users with two of these categories is not negligible, the number of users with all three categories is very low.
 
-<!-- Farouk -->
+# The Story Overview
+In the following sections, we will study the categories defined previously on many levels: beer style preferences, locations, ratings, reviews...etc to extract as much information about these categories as possible to build relevant personas that can be leveraged by the administrators to improve the UX of their website.
+
 ## <a id="section_ratings_reviews">Number of Ratings/Reviews and User Categories</a>
 
 In this section, we highlight the ratings and reviews tendencies of the four categories: XPL, ADV, CFM and EXP.
@@ -223,10 +214,7 @@ By considering the top 10 worst style of beers according to adventurers, we see 
   
 The fit for the regression analysis of the categroy adventurer with the 3 predictors number of ratings, average rating and number of review has a fit of 0.286 which is good for only 3 predictors. Also, the 3 predictors have a very small p value, which suggests that they all have predictive power for the user category adventurer.  
 By looking at the value of the coefficients of the logistic regression obtained, we see that clearly the average rating is an important feature to determine an adventurer. Which is not that suprising since we their mean rating is $\approx$3.45/5 which is quite different from the $\approx$3.89/5 mean rating of the general user. This is explained by the formula for the adventurer score. Adventurers have rated a large number of beers with an average rating for all user less than 3.25/5. Our analyis suggests then that the adventurers are user who like to try beers with bad ratings, but they don't particularly like them more compared to the general users, they are not more soft on their ratings.
-  
 
-
-TODO
 
 ## <a id="section_sent_analysis">Sentiment analysis on User Reviews</a>
 ![Alt text](./assets/svg/sentiment_scores.svg)
@@ -236,7 +224,6 @@ Sentiment of review are mostly very positive for each category. The average sent
 This can be easily explained by looking at the mean rating for each category ie. $\approx$4.39/5 for exp users and $\approx$3.45/5 for adventurers, while conformist and explorers have the same mean rating as the general user.
 The average rating of $\approx$3.45/5 for adventurers is not surprising because by definition they rate beers which are already rated badly by other users. However, the sentiment analyis show that they are not very negative in their reviews. Indeed, while the difference of average rating is huge between adventurers and the general user, the difference of average sentiment is not that noticeable.
 
-TODO
 
 ## <a id="section_personas">Categories' Personas</a>
 ### Explorers (XPL)
@@ -274,6 +261,11 @@ In the highlighted period, the sharpe increase in the increment of the explorers
 Accounting for the fact that we study the users from english speaking countries, 96% of them being from the USA since the website is most popular there, we were able to point out one major event that could explain this surge and that happened in the same period, around mid-May 2014, that is <a href=" https://www.craftbeer.com/news/american-craft-beer-weekz">American Craft Beer Week</a>. To sum it up, this is an event in which beer lovers get to explore and try new beers out from a variety of breweries. We believe that such an event, if not that event in particular, may have contributed to this surge in explorers (XPL), which in turn dominate the yearly increment of new classified users in 2014, which in turn contribute the most to the popularity of the website. This is another result that emphasizes on how much beeradvocate.com is attractive to people willing to explore new beers.
 
 ## <a id="section_takeaways">Takeaways</a>
+In light of our analysis, we would like to highlight the following facts and improvements that could be made to the website:
 
-TODO
+* TODO
+* TODO
+* TODO
+* TODO
 
+On the other hand, this analysis is an example of a successful natural soft-clustering approach to grasp the user tendencies by category and to build personas that can be useful to improve the underlying service or platform. We believe our approach is fruitful in services that rely heavily on recommender systems where understanding and characterizing different classes of users may be helpful in predicting the best item suggestions.
