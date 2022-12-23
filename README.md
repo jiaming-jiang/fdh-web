@@ -268,7 +268,7 @@ We converge our previous results into a summary of category personas that descri
 ### Explorers (XPL)
 * Explorers are overall the most likely category to provide reviews.
 * Explorers are more likely to have many (more than 500) or very few (less than 50) ratings.
-* Explorers have a tendency to live in countries outside of the USA (Austria,England,Canada).
+* Explorers have a tendency to live in countries outside of the USA (Austria, England, Canada).
 * The website attracts explorers more than any other categories over the span of the data.
 * Explorers may believe that beer advocate is a good platform to explore new beers because of the rush in users joining the website during and right after American Craft Beer Week 2014.
 
