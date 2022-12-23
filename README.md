@@ -87,9 +87,12 @@ TODO
   
 TODO
 
+<!-- Farouk -->
 ## <a id="section_reviews_ratings">Number of Ratings/Reviews and User Categories</a>
 
-In this section, we try to understand if the number of ratings or reviews has any significant 
+In this section, we uncover the rating/reviews tendencies of the four categories.
+
+Let us start by  
 
 ## <a id="section_countries">Countries and User Categories</a>
 {% include top_countries_pie_chart.html %}{width=100%}
@@ -143,6 +146,7 @@ TODO
 ### Reference-like (EXP)
 TODO
 
+<!-- Farouk -->
 ## <a id="section_time_analysis">Time Analysis of the Attractiveness of the Website</a>
 In this section, we she light on the attractiveness of beeradvocate.com for each user category overtime. Firstly, we look at the yearly increments in the number of new users broken down by category. The figure below shows those increments for the period spanned by the data:
 
