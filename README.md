@@ -88,7 +88,7 @@ TODO
 TODO
 
 <!-- Farouk -->
-## <a id="section_reviews_ratings">Number of Ratings/Reviews and User Categories</a>
+## <a id="section_ratings_reviews">Number of Ratings/Reviews and User Categories</a>
 
 In this section, we uncover the rating/reviews tendencies of the four categories.
 
