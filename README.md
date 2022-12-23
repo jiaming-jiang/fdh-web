@@ -139,7 +139,7 @@ As we can see, there are very few overlaps between explorers, conformists, and a
 # <a id="section_story">The Story Overview</a>
 In the following sections, we will study the categories defined previously on many levels: beer style preferences, locations, ratings, reviews...etc to extract as much information about these categories as possible to build relevant personas that can be leveraged by the administrators to improve the UX of their website.
 
-## <a id="section_ratings_reviews">How Do the Number of Ratings and Reviews Characterize the Categories?</a>
+## <a id="section_ratings_reviews">How Does the Number of Ratings and Reviews Characterize the Categories?</a>
 
 In this section, we highlight the ratings and reviews tendencies of the four categories: XPL, ADV, CFM, and EXP.
 
