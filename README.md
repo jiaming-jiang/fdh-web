@@ -112,11 +112,11 @@ These users are willing to risk trying out bad beers. We are interested in such 
   
   A user $u$ is an adventurer if he/she often enough risks trying out beers that have a bad rating at the time at which they rate them (less than 3.25/5, knowing that the average is at $\approx$ 3.97/5). The corresponding score is the following:
 
-  $$ADV_u = \sum_{b \in B_u} \mathbb{1} [t_{u,b} < T]$$
+  $$ADV_u = \sum_{b \in B_u} \mathbb{1} [\overline{r}_{u,b}(t_{u,b}) < T]$$
 
   $B_u$ is the set of beers rated by user $u$.
 
-  Time $t_{u,b}$ is the time at which user $u$ rates beer $b$.
+  Rating $\overline{r}_b(t_{u,b})$ is the average rating of beer $b$ at the time $t_{u,b}$ at which user $u$ rates beer $b$.
 
   $T=3.25$ is a cut-off determined empirically based on the data.
 </details>
