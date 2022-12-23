@@ -142,7 +142,9 @@ TODO
 TODO
 
 ### Categories' Overlap
-![Alt text](./assets/svg/venn_diagram_categories.svg)  
+![Alt text](./assets/svg/venn_diagram_categories.svg) 
+
+There is very few overlap between explorers, conformists and adventurers. While the number of users with two of these categories is not negligible, the number of users with all three categories is very low.
   
 TODO
 
@@ -183,29 +185,36 @@ TODO
 ## <a id="section_beers">Beers and User Categories</a>
 
 ### The Locations with the Most Rated and Most Liked Beers
-
+  
 {% include beer_ratings_by_location.html %}
+  
+We see a similar pattern for all categories, they rate beers from where they come from. Indeed, we see that most ratings go to the most populous states of the US. However, by selecting 'adventurer' and 'overall' only on the plot, we see that adventurers, while still rating beers from California a lot, have a different behaviour to the general rater. Indeed, by selecting only 'adventurer' we see that they also rate beers from other countries a lot: beers from Canada, Germany, Belgium and England for example.  
+While Canada may not be surprising since a lot of adventurer come from Canada, and also Belgium is not that suprising because we see that a lot of rated beers come from Belgium if we take the ratings overall. The other countries are more suprising since there is no user from Germany and England from the users we considered. Also, we can see that this countries have a low number of ratings for all other categories.  
 
-TODO
+It seems like adventurers are more likely to rate beers from other countries than the other categories.
+
 
 {% include beer_location_most_liked.html %}
-
-TODO
+  
+Conformist, EXP and explorers mostly agree on the best beer provenance. Moreover, they all have a similar liking compared to users in general.
+However, adventurers have different preferences. By selecting "adventurer" and "overall" on the plot, we see for example that they like more beers from Belgium compared to the general users. There is also is a huge difference for beers from Scotland. Overall, they have very different opinions compared to the other categories.
 
 ### The Most Rated and Most Liked Beer Styles
 
 {% include top_beer_styles.html %}
-
-TODO
+  
+When we select 'overall' and 'conformist' on the plot, we see that these two categories are very similar in terms of rated beer styles.
+However, by selecting 'overall' and 'expert_like' or 'explorer' we see a similar ranking, but the distribution is not the same. This motivates the idea that 'conformist' are the closest user to the lambda user.  
+Finally, we see a very different ranking and distribution for the adventurers. It seems like they rate very different kind of beers compared to the other users.
 
 {% include top_liked_beer_styles.html %}
 
-TODO
+Conformist, explorers and expert-like rate style of beers similarly compared to their average rating. It seems like they all agree that "Geuze", a belgian style of beer, is the best style overall.  
+The only category that doesn't agree with this consensus is the adventurers. The Gueuzes are ranked 11 in their ranking. Their prefered style is quadrupel, which is also belgian and it's not the most common type of beer (at least for Americans).
 
 {% include adventurer_least_liked_beer_styles.html %}
-
-TODO
-
+  
+By considering the top 10 worst style of beers according to adventurers, we see that the American Adjunct Lager is present, while being one of the most rated beers. We can also notice other beers that they rate a lot while considering it not good (eg. Euro Pale Lager). But we saw as well that adventurer also rate some popular beers a lot like the very popular American IPA. So they don't only rate beers styles that are considered as bad by them.
 
 ## <a id="section_reg_analysis">Regression analysis</a>
 ![Alt text](./assets/svg/adventurer_regression.svg)
