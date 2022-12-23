@@ -10,35 +10,6 @@
   </head>
 
   <body>
-    <!-- start: new navigation side bar-->
-    <div class="side-bar">
-      <div class="navig-section">
-        <h1>Content Table</h1>
-        <ul>
-          <li><a href="#section_intro">Introduction</a></li>
-          <li><a href="#section_dataset">Dataset</a></li>
-          <li><a href="#section_clustering_approach">The Approach to the Soft-Clustering of Users</a></li>
-          <li><a href="#section_classification">User Classification</a></li>
-          <li><a href="#section_countries">Countries and User Categories</a></li>
-          <li><a href="#section_beers">Beers and User Categories</a></li>
-          <li><a href="#section_reg_analysis">Regression Analysis</a></li>
-          <li><a href="#section_sent_analysis">Sentiment Analysis of User Reviews</a></li>
-          <li><a href="#section_personas">User Categories' Personas</a></li>
-          <li><a href="#section_time_analysis">Time Analysis of the Website's Attractiveness</a></li>
-          <li><a href="#section_takeaways">Takeaways</a></li>
-        </ul>
-      </div>
-      <div class="externals-section">
-        <h1>Externals</h1>
-        <ul>
-          <li><a href="{{ site.github.repository_url }}">View On GitHub</a></li>
-          <li><a href="{{ site.github.zip_url }}">Download ZIP File</a></li>
-          <li><a href="{{ site.github.tar_url }}">Download TAR Ball</a></li>
-        </ul>
-      </div>
-    </div>
-    <!-- end: new navigation side bar-->
-
     <div class="wrapper">
       <header>
         <h1>{{ site.title | default: site.github.repository_name }}</h1>
@@ -75,6 +46,35 @@
         {% endif %}
       </footer>
     </div>
+    
+     <!-- start: new side bar-->
+    <div class="side-bar">
+      <div class="navig-section">
+        <h1>Content Table</h1>
+        <ul>
+          <li><a href="#section_intro">Introduction</a></li>
+          <li><a href="#section_dataset">Dataset</a></li>
+          <li><a href="#section_clustering_approach">The Approach to the Soft-Clustering of Users</a></li>
+          <li><a href="#section_classification">User Classification</a></li>
+          <li><a href="#section_countries">Countries and User Categories</a></li>
+          <li><a href="#section_beers">Beers and User Categories</a></li>
+          <li><a href="#section_reg_analysis">Regression Analysis</a></li>
+          <li><a href="#section_sent_analysis">Sentiment Analysis of User Reviews</a></li>
+          <li><a href="#section_personas">User Categories' Personas</a></li>
+          <li><a href="#section_time_analysis">Time Analysis of the Website's Attractiveness</a></li>
+          <li><a href="#section_takeaways">Takeaways</a></li>
+        </ul>
+      </div>
+      <div class="externals-section">
+        <h1>Externals</h1>
+        <ul>
+          <li><a href="{{ site.github.repository_url }}">View On GitHub</a></li>
+          <li><a href="{{ site.github.zip_url }}">Download ZIP File</a></li>
+          <li><a href="{{ site.github.tar_url }}">Download TAR Ball</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- end: new side bar-->
     
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
 
