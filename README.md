@@ -225,7 +225,7 @@ The following plot show what are the most disliked style of beers for adventurer
 
 We notice that the American Adjunct Lager is present, while being the beer they rate the most. We can also notice other beers that they rate a lot while considering it not good (eg. Euro Pale Lager), suggesting that they rate a lot of beers that they don't like. However, this oudl not be true to conclude that they only rate beers they don't like. For example, their second most rated beer is American IPA, which is very popular for all users, and they don't seem to dislike them. This suggests that there behaviour is not orthogonal to the general user.
 
-## <a id="section_sent_analysis">How Does Reviews' Sentiment Analyis Compare to Ratings?</a>
+## <a id="section_sent_analysis">How Does Reviews' Sentiment Analysis Compare to Ratings?</a>
 
 The different user categories don't have the same average rating: $\approx$3.92/5 for conformists (CFM), $\approx$4.39 for EXP users, $\approx$3.8 for explorers (XPL) and $\approx$3.45 for adventurers (ADV). The difference for ADV is due to the fact that they rate badly rate beers by definition. But how is this difference in average rating reflected in the sentiment of the reviews?
 We performed a sentiment analysis on the reviews of the users of each category and a sample of users took uniformly regardless of their category. The following plot shows the average "compound sentiment" for the beer reviews of each category using Vader sentiment analyser. The compound sentiment is considered a postive sentiment if its values is above 0.05, neutral if its between 0.05 and -0.05 and negative if it is below -0.05.  
