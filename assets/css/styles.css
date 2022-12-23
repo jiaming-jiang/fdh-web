@@ -227,7 +227,7 @@ footer {
   }
 }
 
-/* Farouk: stylization of the side bar*/
+/* Farouk: stylization of the side bar + Juliette: scrollbar*/
 .side-bar{
   width: 15%;
   height: 100%;
@@ -237,7 +237,7 @@ footer {
   left: 0;
   bottom: 0;
   overflow-y: scroll;
-  padding: 20px 20px;
+  padding: 5px 20px;
   text-align: left;
   font-size: 15px;
 }
