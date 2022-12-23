@@ -237,9 +237,9 @@ footer {
   left: 0;
   bottom: 0;
   overflow-y: scroll;
-  padding: 5px 20px;
+  /*padding: 5px 20px;*/
   text-align: left;
-  font-size: 15px;
+  font-size: 12px;
 }
 .navig-section ul{
   list-style:none;
@@ -255,7 +255,7 @@ footer {
 .navig-section h1{
   color: #ffffff;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 20px;
 }
 .externals-section h1{
   color: #ffffff;
