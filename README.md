@@ -62,9 +62,9 @@ A user which rates a certain amount a poorly rated beers.
   This metric is higher for users that try out beers that have a bad rating. We want to know if the users frequenting the website are generally reluctant or willing to try out beers with bad ratings.
 </details>
 
-<br/>
+</br>
 
-##<a id="section_classification">User Classification</a>
+## <a id="section_classification">User Classification</a>
 
 ![Alt text](./assets/svg/adv_distribution.svg)
 
@@ -87,12 +87,12 @@ TODO
   
 TODO
 
-##<a id="section_countries">Countries and Categories</a>
+## <a id="section_countries">Countries and Categories</a>
 {% include top_countries_pie_chart.html %}{width=100%}
 
 TODO
 
-##<a id="section_beers">Beers and Categories</a>
+## <a id="section_beers">Beers and Categories</a>
 
 ### The Locations with the Most Rated and Most Liked Beers
 
@@ -119,17 +119,17 @@ TODO
 TODO
 
 
-##<a id="section_reg_analysis">Regression analysis</a>
+## <a id="section_reg_analysis">Regression analysis</a>
 ![Alt text](./assets/svg/adventurer_regression.svg)
 
 TODO
 
-##<a id="section_sent_analysis">Sentiment analysis on User Reviews</a>
+## <a id="section_sent_analysis">Sentiment analysis on User Reviews</a>
 ![Alt text](./assets/svg/sentiment_scores.svg)
 
 TODO
 
-##<a id="section_personas">Categories' Personas</a>
+## <a id="section_personas">Categories' Personas</a>
 ### Explorers (XPL)
 TODO
 ### Conformists (CFM)
@@ -139,7 +139,7 @@ TODO
 ### Reference-like (EXP)
 TODO
 
-##<a id="section_t_analysis">Time analysis</a>
+## <a id="section_t_analysis">Time analysis</a>
 {% include time_analysis_cat_perc_new_users.html %}{width=50%}
 
 TODO
@@ -152,7 +152,7 @@ TODO
 
 TODO
 
-##<a id="section_takeaways">Takeaways</a>
+## <a id="section_takeaways">Takeaways</a>
 
 TODO
 
