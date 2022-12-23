@@ -169,53 +169,67 @@ This time, we highlight the most important trend that is that the explorers (XPL
 
 ## <a id="section_countries">Are there more user of some country for some categories?</a>
 
-For our analyis, we took only users from the USA, Canada, UK and Australia. While most users in beeradvocate come from the USA, is the distribution of country the same for all categories ? The following interactive plot shows the distributions of countries for the users for all users (ALL), CFM, XPL, ADV and EXP users.
+For our analyis, we took only users from the USA, Canada, UK and Australia. While most users in beeradvocate come from the USA, is the distribution of country the same for all categories ? The following interactive plot (you can select a category) shows the distributions of countries for the users for all users (ALL), conformist (CFM), explorer (XPL), adventurer (ADV) and EXP users.
 
 {% include top_countries_pie_chart.html %}{width=100%}
 
 We can conclude from the plot that conformists (CFM) and EXP users (EXP) have the same country distribution as the distribution of all users regardless of categories.  
-However, we see a different distribution for explorers (XPL) and adventurers (ADV), with a higher propotion of users from these categories comming from Canada, England and Australia. This could potentially be due to a tendency for these users to rate beers from their own country or region more often. Indeed, since Canadian, English and Australian beers are more rare in BeerAdvocate, if the users from this countries rate the beers from their country more, there are more likely to rate beers with few or bad ratings. Further investigation is needed to confirm this hypothesis.
+However, we see a different distribution for explorers (XPL) and adventurers (ADV), with a higher propotion of users from these categories comming from Canada, England and Australia. This could potentially be due to a tendency for these users to rate beers from their own country or region more often. Indeed, since Canadian, English and Australian beers are more rare in BeerAdvocate, if the users from this countries rate the beers from their country more, there are more likely to rate beers with few or bad ratings.  
+
+The pie chart shows only the distribution of categories at the country level. However, we need to zoom in the USA to have a bigger picture since it's where most users in BeerAdvocate come from. In order to get a clearer look on this disparities per location we can decompose the USA in the diffrent existing states. The following plot show the distribution of US state by categories.
 
 {% include 10highestLocationPerCategories.html %}{width=100%}
 
-In order to get a clearer look on this disparities per location we can decompose the USA in the diffrent existing states. This graph allow us to view the locations with abnormal percentages of user within each categories. Clearly there is a high disparity of the percentages of users per location. CFM and EXP varies between between twice and one time the overall categories value (10% and 3% of the user respectively). However the XPL and ADV categories have higher disparities with the Austria England and Canada having extremely high percentages. 60% of Austrian users are explorer this is more than 4 times the overall percentage of 13%. The concentration of XPL in these countries can be explained by the extremly low number of selected users in these countries. Austria 229 Canada 1593 and England 329. This is in fact so low that when a user rate a local beer there is a high chance that this beer has been rated less than 10 times in the meantime classifying them as XPL.
+ This graph allow us to view the locations with abnormal percentages of user within each categories. Clearly there is a high disparity of the percentages of users per location. CFM and EXP varies between between twice and one time the overall categories value (10% and 3% of the user respectively). However the XPL and ADV categories have higher disparities with the Austria England and Canada having extremely high percentages. 60% of Austrian users are explorer this is more than 4 times the overall percentage of 13%. The concentration of XPL in these countries can be explained by the extremly low number of selected users in these countries. Austria 229 Canada 1593 and England 329. This is in fact so low that when a user rate a local beer there is a high chance that this beer has been rated less than 10 times in the meantime classifying them as XPL.
 ![image](https://user-images.githubusercontent.com/56964728/209369152-17b4e4e0-8637-46f0-bc8b-8eb8e7f039d7.png) 
   
 ## <a id="section_beers">Beers and User Categories</a>
 
-### The Locations with the Most Rated and Most Liked Beers
+### Do users with different categories on BeerAdvocate have similar preferences for region of origin of beers ?
+
+Some region in the world have a high reputation in terms of brewing beers. We will first analysis to which country where the beer was brewed the ratings of users go to. The following interactive plot (you can click on categories) show, for each category, the percentage of rating that go to each location (US state and countries) ranked by highest percentage first. 
   
 {% include beer_ratings_by_location.html %}
   
-We see a similar pattern for all categories, they rate beers from where they come from. Indeed, we see that most ratings go to the most populous states of the US. However, by selecting 'adventurer' and 'overall' only on the plot, we see that adventurers, while still rating beers from California a lot, have a different behaviour to the general rater. Indeed, by selecting only 'adventurer' we see that they also rate beers from other countries a lot: beers from Canada, Germany, Belgium and England for example.  
-While Canada may not be surprising since a lot of adventurer come from Canada, and also Belgium is not that suprising because we see that a lot of rated beers come from Belgium if we take the ratings overall. The other countries are more suprising since there is no user from Germany and England from the users we considered. Also, we can see that this countries have a low number of ratings for all other categories.  
+We can see a similar pattern for all categories: they rate beers from where they come from. Indeed, we see that most ratings go to the most populous states of the US. However, by selecting adventurer (ADV) and overall (ALL) only on the plot, we see that adventurers, while still rating beers from California a lot, have a different behaviour to the general rater. By selecting only 'adventurer' we see that they also rate beers from other countries a lot: beers from Canada, Germany, Belgium and England for example.  
+While Canada and England may not be surprising since a lot of adventurers come from these two countries. The other countries are more suprising since there is no user from Belgium and Germany from the users we considered. Beers from Belgium which are very famous have a high percent of ratings across all categories, however 5% of ratings from adventurer users go to beers brewed in Germany, while only 2% of ratings from users in general go to Germany. It seems like adventurers are more likely to rate beers from other countries than theirs compared to the other categories. 
+This behaviour can compared to explorers who also rates a lot of beers comming from Canada (we see that a lot of explorers are Canadian), but they don't rate beer from Germany as often as explorers.
 
-It seems like adventurers are more likely to rate beers from other countries than the other categories.
-
+We see that adventurers (ADV) don't rate the same kind of beers compared to the other user categories. However, do they have similar likings in terms of beer provenance? The following interactive plot (you can click on a category) shows the ratio between the average rating for each location compared to the average rating of a category of user. If the average rating for a location is above 1 (the dashed line) it means that users from the category selected like more beers from that location compared to the other beers they rated.
 
 {% include beer_location_most_liked.html %}
   
-Conformist, EXP and explorers mostly agree on the best beer provenance. Moreover, they all have a similar liking compared to users in general.
-However, adventurers have different preferences. By selecting "adventurer" and "overall" on the plot, we see for example that they like more beers from Belgium compared to the general users. There is also is a huge difference for beers from Scotland. Overall, they have very different opinions compared to the other categories.
+By selecting all categories, we see that conformists (CFM), EXP users and explorers (XPL) mostly agree on the best beer provenance. Moreover, they all have a similar liking compared to users in general (ALL).
+However, adventurers have different preferences. By clicking on adventurers (ADV) and overall (ALL) on the plot, we see for example that they like more beers from Belgium compared to the general users (ALL). There is also is a huge difference for beers from Scotland. Overall, they have very different opinions compared to the other categories.
 
-### The Most Rated and Most Liked Beer Styles
+### Do user from different categories like the same beer styles ? 
+
+Now that we concluded that conformists (CFM), EXP users and explorers (XPL) have similar behaviour in terms of ratings of beers towards location of origin of beers, and that adventurers (ADV) have a different behaviour. We can see our conclusion also applies to beer styles, which is also a very opinionated topic. 
+The following interactive plot (you can click on categories) is similar to the first plot for location of origin of beers. It displays  for each category, the percentage of rating that go to each bear style ranked by highest percentage first. 
 
 {% include top_beer_styles.html %}
   
-When we select 'overall' and 'conformist' on the plot, we see that these two categories are very similar in terms of rated beer styles.
-However, by selecting 'overall' and 'expert_like' or 'explorer' we see a similar ranking, but the distribution is not the same. This motivates the idea that 'conformist' are the closest user to the lambda user.  
-Finally, we see a very different ranking and distribution for the adventurers. It seems like they rate very different kind of beers compared to the other users.
+When we select the users overall (ALL) and conformist users (CFM) on the plot, we see that these two categories are very similar in terms of percent of ratings for beer styles.
+However, by selecting ALL again and EXP or explorer users (XPL) we see a similar ranking, but the distribution is not the same. This motivates the idea that conformists are the closest user to the lambda user.  
+Finally, we see a very different ranking and distribution for the adventurers. It seems like they rate very different style of beers compared to the other users.
+
+We then compare the likings of each categories in terms of beer style to see if a beer style is more liked by some categories. The following interactive plot (you can click on a category) shows the ratio between the average rating for each beer style compared to the average rating of a category of user. If the average rating for a beer style is above 1 (the dashed line) it means that users from the category selected like more beers from that beer style compared to the other beers they rated.
 
 {% include top_liked_beer_styles.html %}
 
-Conformist, explorers and expert-like rate style of beers similarly compared to their average rating. It seems like they all agree that "Geuze", a belgian style of beer, is the best style overall.  
-The only category that doesn't agree with this consensus is the adventurers. The Gueuzes are ranked 11 in their ranking. Their prefered style is quadrupel, which is also belgian and it's not the most common type of beer (at least for Americans).
+Conformist, explorers and expert-like rate style of beers similarly compared to their average rating. Additionaly, it seems like they all agree that "Geuze", a belgian style of beer, is the best style overall.  
+The only category that doesn't agree with this consensus is the adventurer category: The Gueuzes are only ranked 11 in their ranking. Their prefered style is quadrupel, which is also belgian and according to the webiste, it's not a very common type of beer in the USA (where most users of BeerAdvocate come from). Another interesting result is that, while adventurers are users who rate bears with bad average rating, they tend to rate quadrupel beers a lot according to the plot before showing the percent of ratings. It reveals that, even though adventurers rate a lot of bad beers, they also rate a lot of beers they like.
+
+The following plot show what are the most disliked style of beers for adventurer users (ADV). It's the same kind of plot as above but focuses only adventurers and ranks the beer style by worst normalized average rating first.
 
 {% include adventurer_least_liked_beer_styles.html %}
-  
-By considering the top 10 worst style of beers according to adventurers, we see that the American Adjunct Lager is present, while being one of the most rated beers. We can also notice other beers that they rate a lot while considering it not good (eg. Euro Pale Lager). But we saw as well that adventurer also rate some popular beers a lot like the very popular American IPA. So they don't only rate beers styles that are considered as bad by them.
 
-## <a id="section_sent_analysis">Sentiment analysis on User Reviews</a>
+We notice that the American Adjunct Lager is present, while being the beer they rate the most. We can also notice other beers that they rate a lot while considering it not good (eg. Euro Pale Lager), suggesting that they rate a lot of beers that they don't like. However, this oudl not be true to conclude that they only rate beers they don't like. For example, their second most rated beer is American IPA, which is very popular for all users, and they don't seem to dislike them. This suggests that there behaviour is not orthogonal to the general user.
+
+## <a id="section_sent_analysis">Sentiment analysis on User Reviews</a> Do some categories have more postive reviews ?
+
+The different user categories have different average rating: 
+
 ![Alt text](./assets/svg/sentiment_scores.svg)
 
 The plot shows the average "compound sentiment" for the beer reviews of each category using Vader sentiment analyser. The compound sentiment is considered a postive sentiment if its values is above 0.05, neutral if its between 0.05 and -0.05 and negative if it is below -0.05.  
