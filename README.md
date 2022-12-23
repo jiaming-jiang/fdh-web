@@ -113,7 +113,7 @@ In order to choose adequate thresholds to classify the users based on the scores
 
 ![Alt text](./assets/svg/adv_distribution.svg)
 
-The adventurer score has a heavy-tail distributed. By the interpretability of this score, a cut-off or threshold at 0.2 classifies as adventurers the users for which at least 20% of the beers they rate have a slightly okay at best rating at the moment at which they rate them. We use this threshold that corresponds to the 90$^{th}$ percentile of the ADV score distribution.
+The adventurer score has a heavy-tail distributed. By the interpretability of this score, a cut-off or threshold at 0.2 classifies as adventurers the users for which at least 20% of the beers they rate have a slightly okay at best rating at the moment at which they rate them. We use this threshold that corresponds to the $90^{th}$ percentile of the ADV score distribution.
     
 ![Alt text](./assets/svg/cfm_distribution.svg) 
 
