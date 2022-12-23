@@ -276,7 +276,7 @@ We converge our previous results into a summary of category personas that descri
 * Conformists are the most similar to the average user among all the categories since they don’t deviate from the average user in terms of the beers they like and rate.
 * Conformists are more likely to have a lot of ratings (more than 500) than fewer ratings.
 * Conformists are more likely to provide many reviews (more than 150) when they do provide them.
-* 
+
 ### Adventurers (ADV)
 * Adventurers with a few reviews (less than 150) are more likely to provide reviews compared to adventurers with a higher number of ratings.
 * Their reviews have a similar sentiment compared to the other categories, while having an average rating well below the other categories.
