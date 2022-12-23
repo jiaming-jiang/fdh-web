@@ -4,6 +4,7 @@ body {
   bottom: 0;
   padding-left: 20vw;
   padding-right: 2vw;
+  padding-top: 20px;
   /*padding:50px;*/
   font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color:#595959;
