@@ -117,7 +117,7 @@ The adventurer score has a heavy-tail distributed. By the interpretability of th
     
 ![Alt text](./assets/svg/cfm_distribution.svg) 
 
-The conformist score also has a heavy-tail distributed. Here again, we choose the threshhold that corresponds to the 90^{th} percentile that is -0.35, which by the interpretability of this score means that we classify as conformists the users who deviate on average by less than 0.35 from the average opinion.
+The conformist score also has a heavy-tail distributed. Here again, we choose the threshhold that corresponds to the $90^{th}$ percentile that is -0.35, which by the interpretability of this score means that we classify as conformists the users who deviate on average by less than 0.35 from the average opinion.
     
 ![Alt text](./assets/svg/exp_distribution.svg) 
 
@@ -169,14 +169,14 @@ This time, we highlight the most important trend that is that the explorers (XPL
 
 ## <a id="section_countries">Are There More Users from a Specific Country for Certain Categories?</a>
 
-For our analysis, we took only users from the USA, Canada, UK and Australia. While most users in beeradvocate come from the USA. Is the distribution of country the same for all categories ? The following interactive plot (you can select a category) shows the distributions of countries for the users for all users (ALL), conformist (CFM), explorer (XPL), adventurer (ADV) and EXP users.
+For our analysis, we took only users from the USA, Canada, UK and Australia. While most users in [BeerAdvocate](https://beeradvocate.com) come from the USA. Is the distribution of country the same for all categories ? The following interactive plot (you can select a category) shows the distributions of countries for the users for all users (ALL), conformist (CFM), explorer (XPL), adventurer (ADV) and EXP users.
 
 {% include top_countries_pie_chart.html %}
 
 We can conclude from the plot that conformists (CFM) and EXP users (EXP) have the same country distribution as the distribution of all users regardless of categories.  
-However, we see a different distribution for explorers (XPL) and adventurers (ADV), with a higher propotion of users from these categories comming from Canada, England and Australia. This could potentially be due to a tendency for these users to rate beers from their own country or region more often. Indeed, since Canadian, English and Australian beers are more rare in BeerAdvocate, if the users from this countries rate the beers from their country more, there are more likely to rate beers with few or bad ratings.  
+However, we see a different distribution for explorers (XPL) and adventurers (ADV), with a higher propotion of users from these categories comming from Canada, England and Australia. This could potentially be due to a tendency for these users to rate beers from their own country or region more often. Indeed, since Canadian, English and Australian beers are more rare in [BeerAdvocate](https://beeradvocate.com), if the users from this countries rate the beers from their country more, there are more likely to rate beers with few or bad ratings.  
 
-The pie chart shows only the distribution of categories at the country level. However, we need to zoom in the USA to have a bigger picture since it's where most users in BeerAdvocate come from. In order to get a clearer look on this disparities per location we can decompose the USA in the diffrent existing states. The following plot show the distribution of US state by categories.
+The pie chart shows only the distribution of categories at the country level. However, we need to zoom in the USA to have a bigger picture since it's where most users in [BeerAdvocate](https://beeradvocate.com) come from. In order to get a clearer look on this disparities per location we can decompose the USA in the diffrent existing states. The following plot show the distribution of US state by categories.
 
 {% include 10highestLocationPerCategories.html %}
 
@@ -217,7 +217,7 @@ We then compare the likings of each categories in terms of beer style to see if 
 {% include top_liked_beer_styles.html %}
 
 Conformist, explorers and expert-like rate style of beers similarly compared to their average rating. Additionaly, it seems like they all agree that "Geuze", a belgian style of beer, is the best style overall.  
-The only category that doesn't agree with this consensus is the adventurer category: The Gueuzes are only ranked 11 in their ranking. Their prefered style is quadrupel, which is also belgian and according to the webiste, it's not a very common type of beer in the USA (where most users of BeerAdvocate come from). Another interesting result is that, while adventurers are users who rate bears with bad average rating, they tend to rate quadrupel beers a lot according to the plot before showing the percent of ratings. It reveals that, even though adventurers rate a lot of bad beers, they also rate a lot of beers they like.
+The only category that doesn't agree with this consensus is the adventurer category: The Gueuzes are only ranked 11 in their ranking. Their prefered style is quadrupel, which is also belgian and according to the webiste, it's not a very common type of beer in the USA (where most users of [BeerAdvocate](https://beeradvocate.com) come from). Another interesting result is that, while adventurers are users who rate bears with bad average rating, they tend to rate quadrupel beers a lot according to the plot before showing the percent of ratings. It reveals that, even though adventurers rate a lot of bad beers, they also rate a lot of beers they like.
 
 The following plot show what are the most disliked style of beers for adventurer users (ADV). It's the same kind of plot as above but focuses only adventurers and ranks the beer style by worst normalized average rating first.
 
@@ -225,7 +225,7 @@ The following plot show what are the most disliked style of beers for adventurer
 
 We notice that the American Adjunct Lager is present, while being the beer they rate the most. We can also notice other beers that they rate a lot while considering it not good (eg. Euro Pale Lager), suggesting that they rate a lot of beers that they don't like. However, this oudl not be true to conclude that they only rate beers they don't like. For example, their second most rated beer is American IPA, which is very popular for all users, and they don't seem to dislike them. This suggests that there behaviour is not orthogonal to the general user.
 
-## <a id="section_sent_analysis">How Does Reviews' Sentiment Analysis Compare to Ratings?</a>
+## <a id="section_sent_analysis">How Does Reviews' Sentiment Analysis Compare to Ratings for each Category?</a>
 
 The different user categories don't have the same average rating: $\approx$3.92/5 for conformists (CFM), $\approx$4.39 for EXP users, $\approx$3.8 for explorers (XPL) and $\approx$3.45 for adventurers (ADV). The difference for ADV is due to the fact that they rate badly rate beers by definition. But how is this difference in average rating reflected in the sentiment of the reviews?
 We performed a sentiment analysis on the reviews of the users of each category and a sample of users took uniformly regardless of their category. The following plot shows the average "compound sentiment" for the beer reviews of each category using Vader sentiment analyser. The compound sentiment is considered a postive sentiment if its values is above 0.05, neutral if its between 0.05 and -0.05 and negative if it is below -0.05.  
@@ -233,7 +233,7 @@ We performed a sentiment analysis on the reviews of the users of each category a
 ![Alt text](./assets/svg/sentiment_scores.svg)
   
 Sentiments of review are mostly very positive for each category. The average sentiment is significantly above the threshold for positive sentiment. Conformist, explorers have the same average sentiment as the general user. However, expert-like are slighly more postive and adventurers slightly more negative compared to the general user.
-The disparity between the categories can be explained by they average rating, which is different as we mentioned above. However, the difference in average rating between categories is not fully translated into the sentiment analysis. Although the difference of average rating is huge between adventurers and the general user ($\approx$3.45 vs $\approx$3.89 for users in general), the difference of average sentiment is not that noticeable. This suggests some kind of "regression to the mean" phenomenon: Adventurers may have some reviews which may be more negative compared to the average review, the average sentiment of an adventurer seems to tend towards the average sentiment of beer reviews in general for BeerAdvocate though, which seems to be quite positive.
+The disparity between the categories can be explained by they average rating, which is different as we mentioned above. However, the difference in average rating between categories is not fully translated into the sentiment analysis. Although the difference of average rating is huge between adventurers and the general user ($\approx$3.45 vs $\approx$3.89 for users in general), the difference of average sentiment is not that noticeable. This suggests some kind of "regression to the mean" phenomenon: Adventurers may have some reviews which may be more negative compared to the average review, the average sentiment of an adventurer seems to tend towards the average sentiment of beer reviews in general for [BeerAdvocate](https://beeradvocate.com) though, which seems to be quite positive.
 
 
 ## <a id="section_personas">Categories' Personas</a>
