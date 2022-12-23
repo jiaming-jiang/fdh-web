@@ -66,7 +66,7 @@ For lack of a better name, we will reference these users as the EXP users referi
   
   The score is defined as follows:
   
-  $$EXP_u = -\frac{1}{|B_u|} \sum_{b \in B_u} (\frac{r_{u,b}-ref_b}{\sigma_b})^2$$
+  $$EXP_u = -\frac{1}{|B_u|} \sum_{b \in B_u} (\frac{r_{u,b}-BA_b}{\sigma_b})^2$$
 
   $B_u$ is the set of beers rated by user $u$.
   
@@ -74,7 +74,7 @@ For lack of a better name, we will reference these users as the EXP users referi
   
   $\sigma_b$ is the standard deviation of the ratings of the beer $b$.
   
-  $ref_b$ is a reference of objective rating of a beer $b$. 
+  $BA_b$ is the BA score a beer $b$. 
   
   Note that 94.5% of rated beers in the data available to us have a BA score.
 </details>
