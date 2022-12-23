@@ -173,7 +173,8 @@ TODO
 
 {% include 10highestLocationPerCategories.html %}{width=100%}
 
-In order to get a clearer look on this disparities per location we can decompose the USA in the diffrent existing states. This graph allow us to view the locations with abnormal percentages of user within each categories. Clearly there is a high disparity of the percentages of users per location. Conformist and ... varies between 
+In order to get a clearer look on this disparities per location we can decompose the USA in the diffrent existing states. This graph allow us to view the locations with abnormal percentages of user within each categories. Clearly there is a high disparity of the percentages of users per location. CFM and EXP varies between between twice and one time the overall categories value (10% and 3% of the user respectively). However the XPL and ADV categories have higher disparities with the Austria England and Canada having extremely high percentages. 60% of Austrian users are explorer this is more than 4 times the overall percentage of 13%. The concentration of XPL in these countries can be explained by the extremly low number of selected users in these countries. Austria 229 Canada 1593 and England 329. This is in fact so low that when a user rate a local beer there is a high chance that this beer has been rated less than 10 times in the meantime classifying them as XPL.
+![image](https://user-images.githubusercontent.com/56964728/209369152-17b4e4e0-8637-46f0-bc8b-8eb8e7f039d7.png) 
   
 ## <a id="section_beers">Beers and User Categories</a>
 
