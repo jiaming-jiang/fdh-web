@@ -94,13 +94,13 @@ In this section, we highlight the ratings and reviews tendencies of the four cat
 
 In order to know if the number of ratings characterizes in some way each category, we plot the likelihood of a user belonging to a category as a function of the range in which his/her number of ratings falls. Each range below corresponds to an inter-quantile range of around 25% of the density of the number of ratings of all the studied users. As a quick reminder, those are the users from english speaking countries having at least 5 ratings. The figure below shows the result:
 
-{% ratings_and_cathegory_proba_analysis.html %}{width=100%}
+{% include ratings_and_cathegory_proba_analysis.html %}{width=100%}
 
 TODO
 
 Similarly, we filter the users having at least one review, and repeat the process. The figure below shows the result:
 
-{% reviews_and_cathegory_proba_analysis.html %}{width=100%}
+{% include reviews_and_cathegory_proba_analysis.html %}{width=100%}
 
 TODO
 
