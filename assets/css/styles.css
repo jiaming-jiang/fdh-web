@@ -236,15 +236,15 @@ footer {
   /*width: 15%;*/
   /*width: 15vw;*/
   height: 100%;
-  /*background: #854700;*/
-  background: #AB2102;
+  background: #854700;
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
-  right: 90vw;
+  /*right: 90vw;*/
+  padding-right: 85vw;
   overflow-y: scroll;
-  padding: 20px 20px;
+  /*padding: 20px 20px;*/
   text-align: left;
   font-size: 12px;
 }
@@ -288,8 +288,4 @@ footer {
   background:#c0c0c0;
   text-align:center;
   margin:0 15%;
-}
-
-li {
-  display: list-item;
 }
