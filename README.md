@@ -4,7 +4,7 @@
 ## <a id="section_intro">Introduction</a>
 ### Research questions
 
-## <a id="section_data">Dataset</a>
+## <a id="section_dataset">Dataset</a>
 We use the dataset provided by BeerAdvocate at this [link](https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9uTwG9uNsN4TCF).
 
 ## <a id="section_user_categories">User Categories</a>
@@ -139,7 +139,7 @@ TODO
 ### Reference-like (EXP)
 TODO
 
-## <a id="section_t_analysis">Time analysis</a>
+## <a id="section_time_analysis">Time analysis</a>
 {% include time_analysis_cat_perc_new_users.html %}{width=50%}
 
 TODO
