@@ -184,7 +184,7 @@ The pie chart shows only the distribution of categories at the country level. Ho
   
 ## <a id="section_beers">Do Different Categories Have Different Beer Preferences?</a>
 
-### Do users belonging to different categories on BeerAdvocate have similar preferences for the region of origin of beers?
+### Do users belonging to different categories on [BeerAdvocate](https://beeradvocate.com) have similar preferences for the region of origin of beers?
 
 Some regions in the world have a high reputation in terms of brewing beers. We will first analyze in which country the beer was brewed and where the ratings of users go to. The following interactive plot (you can click on categories) shows, for each category, the percentage of ratings that go to each location (US state and countries) ranked by highest percentage first.
   
