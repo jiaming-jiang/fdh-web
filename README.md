@@ -129,7 +129,7 @@ The explorer score also follows a heavy-tailed distribution. To reiterate, by th
 
 ### <a id="section_overlap">To What Extent Do the Categories Overlap?</a>
 
-Since we do soft clustering, users have a score for each category. But how users who meet the threshold score be in multiple categories? We used a simple Venn diagram to visualize the overlap of categories. The Venn diagram shows the number of users for each category and the number of users who are at the intersection of multiple categories.
+Since we do soft clustering, users have a score for each category. But how users who meet the threshold score be in multiple categories? We used a simple Venn diagram to visualize the overlap of categories. The Venn diagram shows the number of users for the categories CFM, ADV, and XPL, and the number of users who are at the intersection of multiple categories.
 
 
 ![Alt text](./assets/svg/venn_diagram_categories.svg) 
