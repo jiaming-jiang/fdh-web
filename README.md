@@ -6,9 +6,6 @@ In this project, we soft-cluster the users of beeradvocate.com within a set of p
 
 <i><sup>1</sup>natural soft-clustering: this approach is "cluster together users that satisfy a human-interpretable condition" rather than "cluster together users that are similar based on a similarity metric". Since one user can satisfy many conditions simulataneously or none at all, any user can belong to any given number of categories including none at all. That is what we mean by natural soft-clustering of users.</i>
 
-
-### Research questions
-
 ## <a id="section_dataset">Dataset</a>
 We use the [dataset](https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9uTwG9uNsN4TCF) provided by the teaching team of "CS-401:Applied Data Analysis" at EPFL for the year 2022.
 
