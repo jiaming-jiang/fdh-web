@@ -266,13 +266,29 @@ Accounting for the fact that we study the users from English-speaking countries,
 We converge our previous results into a summary of category personas that describe each category:
 
 ### Explorers (XPL)
-TODO
+* Explorers are overall the most likely category to provide reviews.
+* Explorers are more likely to have many (more than 500) or very few (less than 50) ratings.
+* Explorers have a tendency to live in countries outside of the USA (Austria,England,Canada).
+* The website attracts explorers more than any other categories over the span of the data.
+* Explorers may believe that beer advocate is a good platform to explore new beers because of the rush in users joining the website during and right after American Craft Beer Week 2014.
+
 ### Conformists (CFM)
-TODO
+* Conformists are the most similar to the average user among all the categories since they don’t deviate from the average user in terms of the beers they like and rate.
+* Conformists are more likely to have a lot of ratings (more than 500) than fewer ratings.
+* Conformists are more likely to provide many reviews (more than 150) when they do provide them.
+* 
 ### Adventurers (ADV)
-TODO
+* Adventurers with a few reviews (less than 150) are more likely to provide reviews compared to adventurers with a higher number of ratings.
+* Their reviews have a similar sentiment compared to the other categories, while having an average rating well below the other categories.
+* They do not only rate bad beers, they also rate beers they consider as good, for example the Quadrupel beers.
+* They are the most likely to try a beer which comes from a different country than theirs, they rate a lot beers coming from Germany for example.
+* They have very different preferences in terms of beers compared to the other categories whose preferences are quite similar, their ranking in terms of most liked beer for style and country of origin is totally different compared to the other categories.
+* Adventurers are more present in certain countries (Austria, England, Canada).
+
 ### EXP users (EXP)
-TODO
+* EXP users are unlikely to have more than 50 ratings. They tend to have very few ratings, as the majority is below 10 ratings.
+* When EXP users provide reviews, they are unlikely to provide a decent number of reviews (more than 10) compared to the other categories.
+
 
 
 ## <a id="section_takeaways">Takeaways</a>
