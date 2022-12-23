@@ -209,11 +209,21 @@ TODO
 
 ## <a id="section_reg_analysis">Regression analysis</a>
 ![Alt text](./assets/svg/adventurer_regression.svg)
+  
+The fit for the regression analysis of the categroy adventurer with the 3 predictors number of ratings, average rating and number of review has a fit of 0.286 which is good for only 3 predictors. Also, the 3 predictors have a very small p value, which suggests that they all have predictive power for the user category adventurer.  
+By looking at the value of the coefficients of the logistic regression obtained, we see that clearly the average rating is an important feature to determine an adventurer. Which is not that suprising since we their mean rating is $\approx$3.45/5 which is quite different from the $\approx$3.89/5 mean rating of the general user. This is explained by the formula for the adventurer score. Adventurers have rated a large number of beers with an average rating for all user less than 3.25/5. Our analyis suggests then that the adventurers are user who like to try beers with bad ratings, but they don't particularly like them more compared to the general users, they are not more soft on their ratings.
+  
+
 
 TODO
 
 ## <a id="section_sent_analysis">Sentiment analysis on User Reviews</a>
 ![Alt text](./assets/svg/sentiment_scores.svg)
+
+The plot shows the average "compound sentiment" for the beer reviews of each category using Vader sentiment analyser. The compound sentiment is considered a postive sentiment if its values is above 0.05, neutral if its between 0.05 and -0.05 and negative if it is below -0.05.  
+Sentiment of review are mostly very positive for each category. The average sentiment is significantly above the threshold for positive sentiment. Conformist, explorers have the same average sentiment as the general user. However, expert-like are slighly more postive and adventurers slightly more negative compared to the general user.
+This can be easily explained by looking at the mean rating for each category ie. $\approx$4.39/5 for exp users and $\approx$3.45/5 for adventurers, while conformist and explorers have the same mean rating as the general user.
+The average rating of $\approx$3.45/5 for adventurers is not surprising because by definition they rate beers which are already rated badly by other users. However, the sentiment analyis show that they are not very negative in their reviews. Indeed, while the difference of average rating is huge between adventurers and the general user, the difference of average sentiment is not that noticeable.
 
 TODO
 
