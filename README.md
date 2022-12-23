@@ -141,10 +141,14 @@ TODO
 
 TODO
 
-### Categories' Overlap
+### How many users have multiple categories ?
+
+Since we do soft clustering, users have a score for each category. But how users who meet the threshold score to be in multiple categories ? We used a simple Venn diagram to visualize the overlap of categories. The Venn diagram show the number of users for each categories and the number of users who are in the intersection of multiple categories.
+
+
 ![Alt text](./assets/svg/venn_diagram_categories.svg) 
 
-There is very few overlap between explorers, conformists and adventurers. While the number of users with two of these categories is not negligible, the number of users with all three categories is very low.
+As we can see, there are very few overlaps between explorers, conformists and adventurers. There are some users with two categories, but almost no user with all 3 categories. This suggests that the categories that we defined target different kind of users.
 
 <!-- Farouk -->
 ## <a id="section_ratings_reviews">Number of Ratings/Reviews and User Categories</a>
@@ -175,11 +179,15 @@ In the same spirit, we filter the users having at least one review and repeat th
 
 This time, we highlight the most important trend that is that the explorers (XPL) are overall the most likely to provide a review for the beers they rate.
 
-## <a id="section_countries">Countries/States and User Categories</a>
+## <a id="section_countries">Are there more user of some country for some categories?</a>
+
+For our analyis, we took only users from the USA, Canada, UK and Australia. While most users in beeradvocate come from the USA, is the distribution of country the same for all categories ? The following interactive plot shows the distributions of countries for the users for all users (ALL), CFM, XPL, ADV and EXP users.
+
 {% include top_countries_pie_chart.html %}{width=100%}
 
-TODO
-  
+We can conclude from the plot that conformists (CFM) and EXP users (EXP) have the same country distribution as the distribution of all users regardless of categories.  
+However, we see a different distribution for explorers (XPL) and adventurers (ADV), with a higher propotion of users from these categories comming from Canada, England and Australia. This could potentially be due to a tendency for these users to rate beers from their own country or region more often. Indeed, since Canadian, English and Australian beers are more rare in BeerAdvocate, if the users from this countries rate the beers from their country more, there are more likely to rate beers with few or bad ratings. Further investigation is needed to confirm this hypothesis.
+
 {% include 10highestLocationPerCategories.html %}{width=100%}
 
 TODO
