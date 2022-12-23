@@ -16,10 +16,10 @@ We use the [dataset](https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9
 
 We use a score-based approach to soft-cluster users using scores that are easily interpretable to humans. All of our scores satisfy that the larger they are the more they emphasize that the user may belong to the given category.
 
-This category may be regarded as an indicator of hearding effect where users tend, on average, to stick to the average opinion when rating beers even if the average opinion may be unfair towards a beer.
-
 ### **Conformist:** 
 A user who rates beers close to their average rating, meaning that on average this user deviates little from the average opinion on the beers he/she rates.
+
+This category may be regarded as an indicator of hearding effect where users tend, on average, to stick to the average opinion when rating beers even if the average opinion may be unfair towards a beer.
 
 <details>
   <summary>Show more</summary>
