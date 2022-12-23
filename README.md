@@ -227,7 +227,7 @@ We notice that the American Adjunct Lager is present while being the beer they r
 
 ## <a id="section_sent_analysis">How Does Reviews' Sentiment Analysis Compare to Ratings for each Category?</a>
 
-The different user categories don't have the same average rating: $\approx$3.92/5 for conformists (CFM), $\approx$4.39/5 for EXP users, $\approx$3.8/5 for explorers (XPL) and $\approx$3.45/5 for adventurers (ADV). The difference for ADV is that they rate badly rate beers by definition. But how is this difference in average rating reflected in the sentiment of the reviews?
+The different user categories don't have the same average rating: $\approx$3.92/5 for conformists (CFM), $\approx$4.39/5 for EXP users, $\approx$3.8/5 for explorers (XPL) and $\approx$3.45/5 for adventurers (ADV). The difference for ADV is explained by the fact that they rate badly rated beers by definition, so they are more likely to give bad ratings themselves. But how is this difference in average rating reflected in the sentiment of the reviews?
 We performed a sentiment analysis on the reviews of the users of each category and a sample of users took uniformly regardless of their category. The following plot shows the average "compound sentiment" for the beer reviews of each category using the Vader sentiment analyzer. The compound sentiment is considered a positive sentiment if its value is above 0.05, neutral if it's between 0.05 and -0.05, and negative if it is below -0.05.  
 
 ![Alt text](./assets/svg/sentiment_scores.svg)
