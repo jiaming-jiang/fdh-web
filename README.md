@@ -90,9 +90,19 @@ TODO
 <!-- Farouk -->
 ## <a id="section_ratings_reviews">Number of Ratings/Reviews and User Categories</a>
 
-In this section, we uncover the rating/reviews tendencies of the four categories.
+In this section, we highlight the ratings and reviews tendencies of the four categories: XPL, ADV, CFM and EXP.
 
-Let us start by  
+In order to know if the number of ratings characterizes in some way each category, we plot the likelihood of a user belonging to a category as a function of the range in which his/her number of ratings falls. Each range below corresponds to an inter-quantile range of around 25% of the density of the number of ratings of all the studied users. As a quick reminder, those are the users from english speaking countries having at least 5 ratings. The figure below shows the result:
+
+{% ratings_and_cathegory_proba_analysis.html %}{width=100%}
+
+TODO
+
+Similarly, we filter the users having at least one review, and repeat the process. The figure below shows the result:
+
+{% reviews_and_cathegory_proba_analysis.html %}{width=100%}
+
+TODO
 
 ## <a id="section_countries">Countries and User Categories</a>
 {% include top_countries_pie_chart.html %}{width=100%}
@@ -150,7 +160,7 @@ TODO
 ## <a id="section_time_analysis">Time Analysis of the Attractiveness of the Website</a>
 In this section, we she light on the attractiveness of beeradvocate.com for each user category overtime. Firstly, we look at the yearly increments in the number of new users broken down by category. The figure below shows those increments for the period spanned by the data:
 
-{% include time_analysis_new_user_count.html %}
+{% include time_analysis_new_user_count.html %}{width=100%}
 
 Considering the total yearly increments of new users belonging to all categories combined to be a measure of website popularity, one can grasp from the plot above that the website rapidly grows popular over the years to reach a peak of popularity in 2014 before dropping down in subsequent years. Additionally, the main categories  (ADV, CFM and XPL) contribute differently but consistently to these increments overtime. We notice a dominance of the explorers (XPL) in general except in 2012 and 2013 where the adventurers (ADV) and conformists (CFM) have the majority respectively. So far, we can already deduce the following:
 * In most years, the website attracts more explorers (XPL) than any other category. As a quick reminder, those are the users whom around 1 in 5 beers they rate are beers newly introduced to the website since they have at most 10 ratings at the time these users rated them. These users have consistently contributed the most to the popularity of the website, or equivalently, the website has consistently attracted this kind of users most over the years. It is therefore no secret that beeradvocate.com has been consistently is a good website for users willing to explore new beers.
@@ -159,13 +169,13 @@ Considering the total yearly increments of new users belonging to all categories
 
 We take our analysis a step further to understand the reason behind the surge in 2014. We plot the yearly contribution per category to the percentage of new classified users below:
 
-{% include time_analysis_cat_perc_new_users.html %}
+{% include time_analysis_cat_perc_new_users.html %}{width=100%}
 
 We naturally expect the largest explorers to dominate in the first few years as the website gets populated by new beers and there is still much to explore. On the other hand, on this plot, we can clearly see that a significant contribution of adventurers (ADV) has started early on and has been subject to little variance over the years. We can deduce, assuming our categories describe a broad enough spectrum of possible high level user classifications that may be of interest to the administrators, that beeradvocate.com has had a more or less consistent base of adventurers (ADV) joining the website. This is good news as one may wonder if the "labeled" not so good beers would ever have a chance to be tried by the users. The answer is yes they do, and consistently.
 
 Let us focus on the highlighted period corresponding to year 2014. We clearly see a decrease in the share of conformists (CFM), a quasi stagnation of the share of adventurers (ADV) but a quick increase in the share of explorers (XPL). With the aim of uncovering the reason behind the 2014 surge of popularity, we again take our analysis a step further and plot the monthly increments per category in the numbers of new users in 2014 below. The highlighted period corresponds to that between and including the months of May to July.
 
-{% include time_analysis_cat_perc_new_users_2014.html %}
+{% include time_analysis_cat_perc_new_users_2014.html %}{width=100%}
 
 In the highlighted period, the sharpe increase in the increment of the explorers (XPL) stands out since it doubles in one month and almost triples in two months, with respect to the month of May. However, prior to the month of May in the same year, the contributions of the three major categories are rather comparable. 
 
