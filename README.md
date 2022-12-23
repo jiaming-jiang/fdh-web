@@ -145,8 +145,6 @@ TODO
 ![Alt text](./assets/svg/venn_diagram_categories.svg) 
 
 There is very few overlap between explorers, conformists and adventurers. While the number of users with two of these categories is not negligible, the number of users with all three categories is very low.
-  
-TODO
 
 <!-- Farouk -->
 ## <a id="section_ratings_reviews">Number of Ratings/Reviews and User Categories</a>
