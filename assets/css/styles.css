@@ -41,7 +41,7 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:#854700;
+  color:#E29B0F;
   text-decoration:none;
 }
 
@@ -127,10 +127,10 @@ header ul a strong {
 }
 
 section {
-  display:block;
   width:100vw;
   float:center;
   padding-bottom:50px;
+  margin=15%;
 }
 
 small {
@@ -280,4 +280,5 @@ footer {
   width:70%;
   background:#c0c0c0;
   text-align:center;
+  margin:15%
 }
