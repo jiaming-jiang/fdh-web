@@ -281,8 +281,8 @@ footer {
 .footer-note{
   height:25px;
   left: 20vw;
-  right: 20vw;
-  width: 60vw;
+  right: 10vw;
+  width: 70vw;
   position: fixed;
   background:#c0c0c0;
   font-size:8;
