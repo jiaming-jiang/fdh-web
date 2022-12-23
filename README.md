@@ -171,7 +171,7 @@ This time, we highlight the most important trend that is that the explorers (XPL
 
 For our analysis, we took only users from the USA, Canada, UK and Australia. While most users in beeradvocate come from the USA. Is the distribution of country the same for all categories ? The following interactive plot (you can select a category) shows the distributions of countries for the users for all users (ALL), conformist (CFM), explorer (XPL), adventurer (ADV) and EXP users.
 
-{% include top_countries_pie_chart.html %}{width=100%}
+{% include top_countries_pie_chart.html %}
 
 We can conclude from the plot that conformists (CFM) and EXP users (EXP) have the same country distribution as the distribution of all users regardless of categories.  
 However, we see a different distribution for explorers (XPL) and adventurers (ADV), with a higher propotion of users from these categories comming from Canada, England and Australia. This could potentially be due to a tendency for these users to rate beers from their own country or region more often. Indeed, since Canadian, English and Australian beers are more rare in BeerAdvocate, if the users from this countries rate the beers from their country more, there are more likely to rate beers with few or bad ratings.  
