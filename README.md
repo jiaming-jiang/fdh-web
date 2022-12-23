@@ -7,7 +7,7 @@
 ## <a id="section_dataset">Dataset</a>
 We use the dataset provided by BeerAdvocate at this [link](https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9uTwG9uNsN4TCF).
 
-## <a id="section_clustering">The Approach to the Soft-Clustering of Users</a>
+## <a id="section_clustering_approach">The Approach to the Soft-Clustering of Users</a>
 
 ### **Conformist:** 
 A user which rates closely to the average rating of the beers.
