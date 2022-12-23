@@ -16,7 +16,7 @@ We use the [dataset](https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9
 
 We use a score-based approach to soft-cluster users using scores that are easily interpretable to humans. All of our scores satisfy that the larger they are the more they emphasize that the user may belong to the given category.
 
-### **Conformist:** 
+### **Conformists Category** 
 A user who rates beers close to their average rating, meaning that on average this user deviates little from the average opinion on the beers he/she rates.
 
 This category may be regarded as an indicator of hearding effect where users tend, on average, to stick to the average opinion when rating beers even if the average opinion may be unfair towards a beer.
@@ -40,7 +40,7 @@ This category may be regarded as an indicator of hearding effect where users ten
 
 <br>
 
-### **EXP user** 
+### **EXP Users Category** 
 A user that rates beers close the BA score that is displayed on the website for most beers. According to beeradvocate.com administrators, the BA score is a reference score displayed on the website to give the users and idea about how a beer ranks among the beers of the same style.
 
 <i>Note that 94.5% of rated beers in the data available to us have a BA score.</i>
@@ -68,7 +68,7 @@ For lack of a better name, we will reference these users as the EXP users referi
 
 <br>
 
-### **Explorer:**
+### **Explorers Category**
 A user that rates beers having a few ratings only if not none at all. In the latter case, we consider that user  to be the one who added the beer to the website. (yes, beeradvocate.com allows any user to add new beers to its database.)
 
 These users therefore shed light (positively or negatively) on unpopular beers by rating them, and some of them help populate the website with new beers which enriches the user experience on the website. 
@@ -89,7 +89,7 @@ These users therefore shed light (positively or negatively) on unpopular beers b
 
 <br>
 
-### **Adventurer:**
+### **Adventurer Category**
 A user that rates often enough beers that are slightly okay at best. 
 
 These users are willing to risk trying out bad beers. We are interested in such users because they may contribute to the visibility of underated beers in the website and so indirectly to the user experience.
