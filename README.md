@@ -232,7 +232,7 @@ We performed a sentiment analysis on the reviews of the users of each category a
 
 ![Alt text](./assets/svg/sentiment_scores.svg)
   
-Sentiments of review are mostly very positive for each category. The average sentiment is significantly above the threshold for positive sentiment. Conformist, explorers have the same average sentiment as the general user. However, expert-like are slightly more positive, and adventurers are slightly more negative compared to the general user.
+Sentiments of review are mostly very positive for each category. The average sentiment is significantly above the threshold for positive sentiment. Conformist, explorers have the same average sentiment as the general user. However, EXP are slightly more positive, and adventurers are slightly more negative compared to the general user.
 The disparity between the categories can be explained by the average rating, which is different for each category as we mentioned above. However, the difference in average rating between categories is not fully translated into sentiment analysis. Although the difference in average rating is huge between adventurers and the general user ($\approx$3.45 vs $\approx$3.89 for users in general), the difference in average sentiment is not that noticeable. This suggests some kind of "regression to the mean" phenomenon: Adventurers may have some reviews which may be more negative compared to the average review, the average sentiment of an adventurer seems to tend towards the average sentiment of beer reviews in general for [BeerAdvocate](https://beeradvocate.com) though, which seems to be quite positive.
 
 <!-- Farouk -->
