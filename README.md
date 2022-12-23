@@ -2,7 +2,7 @@
 ![Beer Banner](./assets/img/beer_banner_extended.jpg "beer banner")
 
 ## <a id="section_intro">Introduction</a>
-In this project, we soft-cluster the users of beeradvocate.com within a set of predefined categories. Based on that, we analyse how attractive the website is for each category over time. Additionally, we uncover the trends of these categories and build interesting user personas for the website's administrators. By the end, we come up with a few conclusions about what is done right in beeradvocate.com and what could be improved in order to make the website more attractive to the beer lovers community. We also provide a more general result in the form of the conclusion that natural soft-clustering<sup>1</sup> of users can help uncover user groups' behaviors which provides room for improvement in many businesses, including those that heavily rely on recommender systems and providing custom user experiences. We have available to us a dataset of [BeerAdvocate](https://beeradvocate.com) data spanning between 1996 and 2017.
+In this project, we soft-cluster the users of [BeerAdvocate](https://beeradvocate.com) within a set of predefined categories. Based on that, we analyse how attractive the website is for each category over time. Additionally, we uncover the trends of these categories and build interesting user personas for the website's administrators. By the end, we come up with a few conclusions about what is done right in [BeerAdvocate](https://beeradvocate.com) and what could be improved in order to make the website more attractive to the beer lovers community. We also provide a more general result in the form of the conclusion that natural soft-clustering<sup>1</sup> of users can help uncover user groups' behaviors which provides room for improvement in many businesses, including those that heavily rely on recommender systems and providing custom user experiences. We have available to us a dataset of [BeerAdvocate](https://beeradvocate.com) data spanning between 1996 and 2017.
 
 <i><sup>1</sup>natural soft-clustering: this approach is "cluster together users that satisfy a human-interpretable condition" rather than "cluster together users that are similar based on a similarity metric". Since one user can satisfy many conditions simulataneously or none at all, any user can belong to any given number of categories including none at all. That is what we mean by natural soft-clustering of users.</i>
 
@@ -38,7 +38,7 @@ This category may be regarded as an indicator of hearding effect where users ten
 <br>
 
 ### **EXP Users Category** 
-A user that rates beers close the BA score that is displayed on the website for most beers. According to beeradvocate.com administrators, the BA score is a reference score displayed on the website to give the users and idea about how a beer ranks among the beers of the same style.
+A user that rates beers close the BA score that is displayed on the website for most beers. According to [BeerAdvocate](https://beeradvocate.com) administrators, the BA score is a reference score displayed on the website to give the users and idea about how a beer ranks among the beers of the same style.
 
 <i>Note that 94.5% of rated beers in the data available to us have a BA score.</i>
 
@@ -66,7 +66,7 @@ For lack of a better name, we will reference these users as the EXP users referi
 <br>
 
 ### **Explorers Category**
-A user that rates beers having a few ratings only if not none at all. In the latter case, we consider that user  to be the one who added the beer to the website. (yes, beeradvocate.com allows any user to add new beers to its database.)
+A user that rates beers having a few ratings only if not none at all. In the latter case, we consider that user  to be the one who added the beer to the website. (yes, [BeerAdvocate](https://beeradvocate.com) allows any user to add new beers to its database.)
 
 These users therefore shed light (positively or negatively) on unpopular beers by rating them, and some of them help populate the website with new beers which enriches the user experience on the website. 
 
@@ -249,12 +249,12 @@ TODO
 
 <!-- Farouk -->
 ## <a id="section_time_analysis">Time Analysis of the Attractiveness of the Website</a>
-In this section, we she light on the attractiveness of beeradvocate.com for each user category overtime. Firstly, we look at the yearly increments in the number of new users broken down by category. The figure below shows those increments for the period spanned by the data:
+In this section, we she light on the attractiveness of [BeerAdvocate](https://beeradvocate.com) for each user category overtime. Firstly, we look at the yearly increments in the number of new users broken down by category. The figure below shows those increments for the period spanned by the data:
 
 {% include time_analysis_new_user_count.html %}
 
 Considering the total yearly increments of new users belonging to all categories combined to be a measure of website popularity, one can grasp from the plot above that the website rapidly grows popular over the years to reach a peak of popularity in 2014 before dropping down in subsequent years. Additionally, the main categories  (ADV, CFM and XPL) contribute differently but consistently to these increments overtime. We notice a dominance of the explorers (XPL) in general except in 2012 and 2013 where the adventurers (ADV) and conformists (CFM) have the majority respectively. So far, we can already deduce the following:
-* In most years, the website attracts more explorers (XPL) than any other category. As a quick reminder, those are the users whom around 1 in 5 beers they rate are beers newly introduced to the website since they have at most 10 ratings at the time these users rated them. These users have consistently contributed the most to the popularity of the website, or equivalently, the website has consistently attracted this kind of users most over the years. It is therefore no secret that beeradvocate.com has been consistently is a good website for users willing to explore new beers.
+* In most years, the website attracts more explorers (XPL) than any other category. As a quick reminder, those are the users whom around 1 in 5 beers they rate are beers newly introduced to the website since they have at most 10 ratings at the time these users rated them. These users have consistently contributed the most to the popularity of the website, or equivalently, the website has consistently attracted this kind of users most over the years. It is therefore no secret that [BeerAdvocate](https://beeradvocate.com) has been consistently is a good website for users willing to explore new beers.
 * Even if the explorers (XPL) dominate, the website consistently attracts a decent variety of users between conformists (CFM) and adventurers (ADV). This is emphasized by the fact that, even though we perform soft-clustering of users so each user can belong to more than one category, there is no major overlap between the three categories as shown by the Venn diagram of section "Categories' Overlap" so the trends are almost independent.
 * The website has known a big surge in its number of users in 2014, which is the period highlighted, more than any other year. This surge is lead by the explorers (XPL).
 
@@ -262,7 +262,7 @@ We take our analysis a step further to understand the reason behind the surge in
 
 {% include time_analysis_cat_perc_new_users.html %}
 
-We naturally expect the largest explorers to dominate in the first few years as the website gets populated by new beers and there is still much to explore. On the other hand, on this plot, we can clearly see that a significant contribution of adventurers (ADV) has started early on and has been subject to little variance over the years. We can deduce, assuming our categories describe a broad enough spectrum of possible high level user classifications that may be of interest to the administrators, that beeradvocate.com has had a more or less consistent base of adventurers (ADV) joining the website. This is good news as one may wonder if the "labeled" not so good beers would ever have a chance to be tried by the users. The answer is yes they do, and consistently.
+We naturally expect the largest explorers to dominate in the first few years as the website gets populated by new beers and there is still much to explore. On the other hand, on this plot, we can clearly see that a significant contribution of adventurers (ADV) has started early on and has been subject to little variance over the years. We can deduce, assuming our categories describe a broad enough spectrum of possible high level user classifications that may be of interest to the administrators, that [BeerAdvocate](https://beeradvocate.com) has had a more or less consistent base of adventurers (ADV) joining the website. This is good news as one may wonder if the "labeled" not so good beers would ever have a chance to be tried by the users. The answer is yes they do, and consistently.
 
 Let us focus on the highlighted period corresponding to year 2014. We clearly see a decrease in the share of conformists (CFM), a quasi stagnation of the share of adventurers (ADV) but a quick increase in the share of explorers (XPL). With the aim of uncovering the reason behind the 2014 surge of popularity, we again take our analysis a step further and plot the monthly increments per category in the numbers of new users in 2014 below. The highlighted period corresponds to that between and including the months of May to July.
 
@@ -270,7 +270,7 @@ Let us focus on the highlighted period corresponding to year 2014. We clearly se
 
 In the highlighted period, the sharpe increase in the increment of the explorers (XPL) stands out since it doubles in one month and almost triples in two months, with respect to the month of May. However, prior to the month of May in the same year, the contributions of the three major categories are rather comparable. 
 
-Accounting for the fact that we study the users from english speaking countries, 96% of them being from the USA since the website is most popular there, we were able to point out one major event that could explain this surge and that happened in the same period, around mid-May 2014, that is <a href=" https://www.craftbeer.com/news/american-craft-beer-week">American Craft Beer Week</a>. To sum it up, this is an event in which beer lovers get to explore and try new beers out from a variety of breweries. We believe that such an event, if not that event in particular, may have contributed to this surge in explorers (XPL), which in turn dominate the yearly increment of new classified users in 2014, which in turn contribute the most to the popularity of the website. This is another result that emphasizes on how much beeradvocate.com is attractive to people willing to explore new beers.
+Accounting for the fact that we study the users from english speaking countries, 96% of them being from the USA since the website is most popular there, we were able to point out one major event that could explain this surge and that happened in the same period, around mid-May 2014, that is <a href=" https://www.craftbeer.com/news/american-craft-beer-week">American Craft Beer Week</a>. To sum it up, this is an event in which beer lovers get to explore and try new beers out from a variety of breweries. We believe that such an event, if not that event in particular, may have contributed to this surge in explorers (XPL), which in turn dominate the yearly increment of new classified users in 2014, which in turn contribute the most to the popularity of the website. This is another result that emphasizes on how much [BeerAdvocate](https://beeradvocate.com) is attractive to people willing to explore new beers.
 
 ## <a id="section_takeaways">Takeaways</a>
 In light of our analysis, we would like to highlight the following facts and improvements that could be made to the website:
