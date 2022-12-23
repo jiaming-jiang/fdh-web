@@ -151,8 +151,8 @@ It is worth pointing out that we only consider 99% of the density as the remaini
 
 We notice the following trends:
 * Adventurers (ADV) are more likely to have fewer ratings (100 ratings at most), but could also have more ratings. The probability is however almost halved for subsequent ranges where the number of ratings is larger than 100.
-* Conformists (CFM) are more likely to have so many ratings (more than 500 ratings).
-* Explorers (XPL) are almost as likely to have very few or so many ratings (more than 500 ratings).
+* Conformists (CFM) are more likely to have many more ratings (more than 500 ratings).
+* Explorers (XPL) are almost as likely to have very few or many more ratings (more than 500 ratings).
 * EXP users (EXP) mostly have very few ratings (10 at most) and become quickly significantly less likely as the number of rating increases.
 
 We can therefore deduce the following:
