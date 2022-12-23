@@ -280,7 +280,7 @@ We converge our previous results into a summary of category personas that descri
 ### Adventurers (ADV)
 * Adventurers with a few reviews (less than 150) are more likely to provide reviews compared to adventurers with a higher number of ratings.
 * Their reviews have a similar sentiment compared to the other categories, while having an average rating well below the other categories.
-* They do not only rate bad beers, they also rate beers they consider as good, for example the Quadrupel beers.
+* They do not only rate bad beers, they also rate beers they consider good, for example the Quadrupel beers.
 * They are the most likely to try a beer which comes from a different country than theirs, they rate a lot beers coming from Germany for example.
 * They have very different preferences in terms of beers compared to the other categories whose preferences are quite similar, their ranking in terms of most liked beer for style and country of origin is totally different compared to the other categories.
 * Adventurers are more present in certain countries (Austria, England, Canada).
