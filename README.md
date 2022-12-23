@@ -223,7 +223,7 @@ The following plot show what are the most disliked style of beers for adventurer
 
 {% include adventurer_least_liked_beer_styles.html %}
 
-We notice that the American Adjunct Lager is present while being the beer they rate the most. We can also notice other beers that they rate a lot while considering it not good (eg. Euro Pale Lager), suggesting that they rate a lot of beers that they don't like. However, this coudl not be true to conclude that they only rate beers they don't like. For example, their second most-rated beer is American IPA, which is very popular with all users, and they don't seem to dislike them. This suggests that their behavior is not orthogonal to the general user.
+We notice that the American Adjunct Lager is present while being the beer they rate the most. We can also notice other beers that they rate a lot while considering it not good (eg. Euro Pale Lager), suggesting that they rate a lot of beers that they don't like. However, this could be false to conclude that they only rate beers they don't like. For example, their second most-rated beer is American IPA, which is very popular with all users, and they don't seem to dislike them. This suggests that their behavior is not orthogonal to the general user.
 
 ## <a id="section_sent_analysis">How Does Reviews' Sentiment Analysis Compare to Ratings for each Category?</a>
 
