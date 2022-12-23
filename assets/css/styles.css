@@ -1,5 +1,9 @@
 body {
   background-color: #E5EEF7;
+  top: 0;
+  right: 0;
+  bottom: 25px;
+  right: 15vw;
   padding:50px;
   font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color:#595959;
@@ -230,13 +234,14 @@ footer {
 /* Farouk: stylization of the side bar + Juliette: scrollbar*/
 .side-bar{
   /*width: 15%;*/
-  width: 15vw;
+  /*width: 15vw;*/
   height: 100%;
   background: #854700;
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
+  right: 90vw
   overflow-y: scroll;
   padding: 20px 20px;
   text-align: left;
