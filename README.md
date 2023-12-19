@@ -51,7 +51,7 @@ In order to know if the number of ratings characterizes in some way each categor
 
 It is worth pointing out that we only consider 99% of the density as the remaining 1% contains only super users which have many folds more ratings than normal users. Since there are very few super users, their results may be non-conclusive because they may be non-representative of super users overall that is why we treat them as outliers and discard them here.
 
-{% include ratings_and_cathegory_proba_analysis.html %}
+{% include Plotly_1.html %}
 
 We notice the following trends:
 * Adventurers (ADV) are more likely to have fewer ratings (100 ratings at most), but could also have more ratings. The probability is however almost halved for subsequent ranges where the number of ratings is larger than 100.
