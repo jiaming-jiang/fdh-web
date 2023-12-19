@@ -90,9 +90,6 @@ This is Chapter 16.
 
 {% include Plotly_16.html %}
 
-This is Chapter 17.
-
-{% include Plotly_17.html %}
 
 This is Chapter 18.
 
