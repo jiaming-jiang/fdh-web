@@ -1,5 +1,5 @@
 {% include head.html %}
-![Beer Banner](./assets/img/jerusalem_map.webp "beer banner")
+![Beer Banner](./assets/img/jerusalem_map.webp "map banner")
 
 ## <a id="section_intro">Introduction</a>
 We're to spatialze the travelogue around Jerusalem.
