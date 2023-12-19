@@ -45,24 +45,29 @@ In the following sections, we will study the categories defined previously on ma
 
 ## <a id="section_ratings_reviews">How Does the Number of Ratings and Reviews Characterize the Categories?</a>
 
-In this section, we highlight the ratings and reviews tendencies of the four categories: XPL, ADV, CFM, and EXP.
-
-In order to know if the number of ratings characterizes in some way each category, we plot the likelihood of a user belonging to a category as a function of the range in which his/her number of ratings falls. Each range corresponds to an inter-quantile range of around 25% of the density of the number of ratings of all the studied users. As a quick reminder, those are the users from English-speaking countries having at least 5 ratings. The figure below shows the result.
-
-It is worth pointing out that we only consider 99% of the density as the remaining 1% contains only super users which have many folds more ratings than normal users. Since there are very few super users, their results may be non-conclusive because they may be non-representative of super users overall that is why we treat them as outliers and discard them here.
+This is Chapter 1.
 
 {% include Plotly_1.html %}
 
-We notice the following trends:
-* Adventurers (ADV) are more likely to have fewer ratings (100 ratings at most), but could also have more ratings. The probability is however almost halved for subsequent ranges where the number of ratings is larger than 100.
-* Conformists (CFM) are more likely to have many more ratings (more than 500 ratings).
-* Explorers (XPL) are almost as likely to have very few or many more ratings (more than 500 ratings).
-* EXP users (EXP) mostly have very few ratings (10 at most) and become quickly significantly less likely as the number of rating increases.
+This is Chapter 2.
 
+{% include Plotly_2.html %}
 
-In the same spirit, we filter the users having at least one review and repeat the process. The figure below shows the result:
+This is Chapter 3.
 
-{% include reviews_and_cathegory_proba_analysis.html %}
+{% include Plotly_3.html %}
+
+This is Chapter 4.
+
+{% include Plotly_4.html %}
+
+This is Chapter 5.
+
+{% include Plotly_5.html %}
+
+This is Chapter 6.
+
+{% include Plotly_6.html %}
 
 This time, we highlight the most important trend which is that the explorers (XPL) are overall the most likely to provide a review for the beers they rate.
 
