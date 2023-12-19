@@ -3,7 +3,7 @@
 
 ## <a id="section_intro">Introduction</a>
 We're to spatialze the travelogue around Jerusalem.
-In this project, we soft-cluster<sup>1</sup> the users of [BeerAdvocate](https://beeradvocate.com) within a set of predefined categories. Based on that, we analyze how attractive the website is for each category over time. Additionally, we uncover the trends of these categories and build interesting user personas for the website's administrators. By the end, we come up with a few conclusions about what is done right in [BeerAdvocate](https://beeradvocate.com) and what could be improved in order to make the website more attractive to the beer lovers community. We also provide a more general result in the form of the conclusion that natural soft-clustering of users can help uncover user groups' behaviors which provides room for improvement in many businesses, including those that heavily rely on recommender systems and providing custom user experiences. We have available to us a dataset of [BeerAdvocate](https://beeradvocate.com) data spanning between 1996 and 2017.
+
 
 <i><sup>1</sup>natural soft-clustering: this approach is "cluster together users that satisfy a human-interpretable condition" rather than "cluster together users that are similar based on a similarity metric". Since one user can satisfy many conditions simultaneously or none at all, any user can belong to any given number of categories including none at all. That is what we mean by natural soft-clustering of users.</i>
 
@@ -14,29 +14,6 @@ We use the [dataset](https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9
 
 We use a score-based approach to soft-cluster users using scores that are easily interpretable to humans. All of our scores satisfy that the larger they are the more they emphasize that the user may belong to the given category.
 
-
-<br>
-
-### **Adventurer Category (ADV)**
-A user that rates often enough beers that are slightly okay at best. 
-
-These users are willing to risk trying out bad beers. We are interested in such users because they may contribute to the visibility of underrated beers on the website and so indirectly to the user experience.
-
-<details>
-  <summary>Show more</summary>
-  
-  A user $u$ is an adventurer if he/she often enough risks trying out beers that have a bad rating at the time at which they rate them (less than 3.25/5, knowing that the average is at $\approx$ 3.97/5). The corresponding score is the following:
-
-  $$ADV_u = \sum_{b \in B_u} \mathbb{1} [\overline{r}_{u,b}(t_{u,b}) < T]$$
-
-  $B_u$ is the set of beers rated by user $u$.
-
-  Rating $\overline{r}_b(t_{u,b})$ is the average rating of beer $b$ at the time $t_{u,b}$ at which user $u$ rates beer $b$.
-
-  $T=3.25$ is a cut-off determined empirically based on the data.
-</details>
-
-<br>
 
 ## <a id="section_clustering">User Clustering</a>
 
@@ -86,11 +63,6 @@ We notice the following trends:
 * Explorers (XPL) are almost as likely to have very few or many more ratings (more than 500 ratings).
 * EXP users (EXP) mostly have very few ratings (10 at most) and become quickly significantly less likely as the number of rating increases.
 
-We can therefore deduce the following:
-* Adventurers (ADV): the more ratings a user has, the less likely he/she tends to try out not-so-good beers. This is not explained by the unwillingness of users with many ratings to try bad beers, but rather by the fact that the average beer rating is quite high ($\approx$ 3.97/5 overall) so users who have a lot of ratings end up rating beers that on average have a good score which reduces the percentage of bad beers they rate and thus throws them off being classified as adventurers.
-* Conformists (CFM): the users who rate on average close to the average rating of a beer tend to have many ratings, unabiding by what one could expect.
-* EXP users (EXP): the users that rate beers close (0.2 average deviations from the true value) to the piecewise linear mapping of the BA score to the range [0, 5] do so unintentionally since they tend to have very few ratings. We can already deduce that the display of the BA score on the website has no significant influence on the way the users rate the beers.
-* Explorers (XPL): the users who tend to rate newly introduced beers or introduce new beers are more likely to have many or very few ratings.
 
 In the same spirit, we filter the users having at least one review and repeat the process. The figure below shows the result:
 
@@ -190,36 +162,6 @@ Let us focus on the highlighted period corresponding to the year 2014. We clearl
 In the highlighted period, the sharp increase in the increment of the explorers (XPL) stands out since it doubles in one month and almost triples in two months, with respect to May. However, prior to May of the same year, the contributions of the three major categories are rather comparable. 
 
 Accounting for the fact that we study the users from English-speaking countries, 96% of them being from the USA since the website is most popular there, we were able to point out one major event that could explain this surge and that happened in the same period, around mid-May 2014, that is <a href=" https://www.craftbeer.com/news/american-craft-beer-week">American Craft Beer Week</a>. To sum it up, this is an event in which beer lovers get to explore and try new beers out from a variety of breweries. We believe that such an event, if not that event in particular, may have contributed to this surge in explorers (XPL), which in turn dominated the yearly increment of new classified users in 2014, which in turn contributed the most to the popularity of the website. This is another result that emphasizes how much [BeerAdvocate](https://beeradvocate.com) is attractive to people willing to explore new beers.
-
-
-## <a id="section_personas">Categories' Personas</a>
-
-We converge our previous results into a summary of category personas that describe each category:
-
-### Explorers (XPL)
-* Explorers are overall the most likely category to provide reviews.
-* Explorers are more likely to have many (more than 500) or very few (less than 50) ratings.
-* Explorers have a tendency to live in countries outside of the USA (Austria, England, Canada).
-* The website attracts explorers more than any other categories over the span of the data.
-* Explorers may believe that beer advocate is a good platform to explore new beers because of the rush in users joining the website during and right after American Craft Beer Week 2014.
-
-### Conformists (CFM)
-* Conformists are the most similar to the average user among all the categories since they don’t deviate from the average user in terms of the beers they like and rate.
-* Conformists are more likely to have a lot of ratings (more than 500) than fewer ratings.
-* Conformists are more likely to provide many reviews (more than 150) when they do provide them.
-
-### Adventurers (ADV)
-* Adventurers with a few reviews (less than 150) are more likely to provide reviews compared to adventurers with a higher number of ratings.
-* Their reviews have a similar sentiment compared to the other categories, while having an average rating well below the other categories.
-* They do not only rate bad beers, they also rate beers they consider good, for example the Quadrupel beers.
-* They are the most likely to try a beer which comes from a different country than theirs, they rate a lot beers coming from Germany for example.
-* They have very different preferences in terms of beers compared to the other categories whose preferences are quite similar, their ranking in terms of most liked beer for style and country of origin is totally different compared to the other categories.
-* Adventurers are more present in certain countries (Austria, England, Canada).
-
-### EXP users (EXP)
-* EXP users are unlikely to have more than 50 ratings. They tend to have very few ratings, as the majority is below 10 ratings.
-* When EXP users provide reviews, they are unlikely to provide a decent number of reviews (more than 10) compared to the other categories.
-
 
 
 ## <a id="section_takeaways">Takeaways</a>
