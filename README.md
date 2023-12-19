@@ -82,9 +82,6 @@ This is Chapter 14.
 
 {% include Plotly_14.html %}
 
-This is Chapter 15.
-
-{% include Plotly_15.html %}
 
 This is Chapter 16.
 
