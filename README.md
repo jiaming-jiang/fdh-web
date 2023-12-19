@@ -11,25 +11,6 @@ We use the [dataset](https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9
 We use a score-based approach to soft-cluster users using scores that are easily interpretable to humans. All of our scores satisfy that the larger they are the more they emphasize that the user may belong to the given category.
 
 
-## <a id="section_clustering">User Clustering</a>
-
-In order to choose adequate thresholds to classify the users based on the scores defined in the previous section, we look at the distributions of these scores. The figures below plot those distributions in real and logarithmic scales:
-
-![Alt text](./assets/svg/adv_distribution.svg)
-
-The adventurer score has a heavy-tail distribution. By the interpretability of this score, a cut-off or threshold at 0.2 classifies as adventurers the users for which at least 20% of the beers they rate have a slightly okay at best rating at the moment at which they rate them. We use this threshold that corresponds to the $90^{th}$ percentile of the ADV score distribution.
-    
-![Alt text](./assets/svg/cfm_distribution.svg) 
-
-The conformist score also has a heavy-tail distribution. Here again, we choose the threshold that corresponds to the $90^{th}$ percentile that is -0.35, which by the interpretability of this score means that we classify as conformists the users who deviate on average by less than 0.35 from the average opinion.
-    
-![Alt text](./assets/svg/exp_distribution.svg) 
-
-The EXP score looks more like a skewed gaussian, but it is not since it is heavy-tailed. Again by the interpretability of this score, a threshold at -0.2 classifies users that deviate on average by less than 0.2 from the displayed BA score as EXP users.
-   
-![Alt text](./assets/svg/xpl_distribution.svg)  
-
-The explorer score also follows a heavy-tailed distribution. To reiterate, by the interpretability of this score, given a threshold of approximately 0.2, we classify as explorers the users that figure in the first 10 raters of at least 20% of the beers they rate.
 
 ### <a id="section_overlap">To What Extent Do the Categories Overlap?</a>
 
@@ -68,6 +49,62 @@ This is Chapter 5.
 This is Chapter 6.
 
 {% include Plotly_6.html %}
+
+This is Chapter 7.
+
+{% include Plotly_7.html %}
+
+This is Chapter 8.
+
+{% include Plotly_8.html %}
+
+This is Chapter 9.
+
+{% include Plotly_9.html %}
+
+This is Chapter 10.
+
+{% include Plotly_10.html %}
+
+This is Chapter 11.
+
+{% include Plotly_11.html %}
+
+This is Chapter 12.
+
+{% include Plotly_12.html %}
+
+This is Chapter 13.
+
+{% include Plotly_13.html %}
+
+This is Chapter 14.
+
+{% include Plotly_14.html %}
+
+This is Chapter 15.
+
+{% include Plotly_15.html %}
+
+This is Chapter 16.
+
+{% include Plotly_16.html %}
+
+This is Chapter 17.
+
+{% include Plotly_17.html %}
+
+This is Chapter 18.
+
+{% include Plotly_18.html %}
+
+This is Chapter 19.
+
+{% include Plotly_19.html %}
+
+This is Chapter 20.
+
+{% include Plotly_20.html %}
 
 This time, we highlight the most important trend which is that the explorers (XPL) are overall the most likely to provide a review for the beers they rate.
 
