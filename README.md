@@ -1,4 +1,3 @@
-{% include head.html %}
 ![Beer Banner](./assets/img/jerusalem_map.webp "map banner")
 
 ## <a id="section_intro">Introduction</a>
