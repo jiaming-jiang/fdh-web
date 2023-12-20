@@ -3,6 +3,9 @@
 ## <a id="section_intro">Introduction</a>
 We're to spatialze the travelogue around Jerusalem.
 
+
+## <a id="section_overview">Overview</a>
+
 Here is a list of all the toponyms, classified by chapters.
 
 {% include 2.interactive_table.html %}
@@ -18,7 +21,7 @@ Then if we focus on those she really visited:
 
 What about visualizing these on real maps?
 
-
+## <a id="section_1">Chapter 1</a>
 This is Chapter 1.
 
 {% include Plotly_1.html %}
