@@ -18,6 +18,8 @@ Then if we focus on those she really visited:
 
 {% include 3.network_visited.html %}
 
+![Picture](./assets/img/MixCollage(2).jpg "Mix")
+
 
 What about visualizing these on real maps?
 
