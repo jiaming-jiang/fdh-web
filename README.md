@@ -18,7 +18,7 @@ Then if we focus on those she really visited:
 
 {% include 3.network_visited.html %}
 
-![Picture](./assets/img/Mix.png"Mix")
+![Picture](./assets/img/Mix.png "Mix")
 
 
 What about visualizing these on real maps?
